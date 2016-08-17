@@ -1,0 +1,18 @@
+@mixin check_nav {
+
+  &:first-child {
+
+    a {
+      border-bottom: 2px solid $color;
+
+      &:after {
+        position: absolute;
+        top: 8px;
+        right: 40%;
+        font-family: 'FontAwesome';
+        content: "\f0dd";
+        color: $color;
+      }
+    }
+  }
+}

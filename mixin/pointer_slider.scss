@@ -1,0 +1,21 @@
+@mixin set_pointer($size: 55) {
+    $position-list: left right;
+
+    @each $var in $position-list {
+      .fa-chevron-#{$var} {
+        position: absolute;
+        top: 44%;
+        #{$var}: 6%;
+        font-size: #{$size}px;
+        color: #9f503d;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+}
+
+
+

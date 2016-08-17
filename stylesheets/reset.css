@@ -1,0 +1,10 @@
+a{
+    color: black;
+    text-decoration: none;
+}
+sup {
+    vertical-align: super !important;
+}
+sub {
+    vertical-align: sub !important;
+}

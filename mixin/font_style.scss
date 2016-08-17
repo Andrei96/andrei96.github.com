@@ -1,0 +1,4 @@
+@mixin font_style($size, $txt_width: normal, $line_height: normal, $font-family: 'Liberation Sans') { // font style
+
+  font: $txt_width #{$size}px/#{$line_height} '#{$font-family}', sans-serif;
+}
