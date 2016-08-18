@@ -519,6 +519,34 @@ footer {
 }
 
 
+@media screen and (max-width: 750px) {
+
+  section.portfolio {
+
+    .wrapper {
+
+      .content {
+
+        span.descr {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  section.talk-us {
+    .wrapper {
+
+      .content {
+
+        p {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 760px) and (max-width: 1024px){
 
     section.slider {
@@ -630,10 +658,6 @@ footer {
 
       }
     }
-
-
-
-
 }
 
 

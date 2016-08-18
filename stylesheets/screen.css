@@ -546,6 +546,17 @@ footer .wrapper .content h4 {
   color: #fff;
 }
 
+@media screen and (max-width: 750px) {
+  /* line 530, ../sass/screen.scss */
+  section.portfolio .wrapper .content span.descr {
+    width: 100%;
+  }
+
+  /* line 542, ../sass/screen.scss */
+  section.talk-us .wrapper .content p {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 760px) and (max-width: 1024px) {
   /* line 5, ../mixin/pointer_slider.scss */
   section.slider .wrapper .content .fa-chevron-left {
@@ -571,71 +582,71 @@ footer .wrapper .content h4 {
   section.slider .wrapper .content .fa-chevron-right:hover {
     cursor: pointer;
   }
-  /* line 535, ../sass/screen.scss */
+  /* line 563, ../sass/screen.scss */
   section.slider .wrapper .content .slide-name div span {
     font: bold 15px/1.5em "Ubuntu Light", sans-serif;
   }
 
-  /* line 546, ../sass/screen.scss */
+  /* line 574, ../sass/screen.scss */
   section.about-us .wrapper {
     width: 80%;
     margin: 0 auto;
   }
 
-  /* line 553, ../sass/screen.scss */
+  /* line 581, ../sass/screen.scss */
   section.portfolio .wrapper {
     width: 80%;
     margin: 0 auto;
   }
-  /* line 559, ../sass/screen.scss */
+  /* line 587, ../sass/screen.scss */
   section.portfolio .wrapper .content span.descr {
     width: 100%;
   }
 
-  /* line 573, ../sass/screen.scss */
+  /* line 601, ../sass/screen.scss */
   section.talk-us .wrapper .content p {
     width: 100%;
   }
 
-  /* line 582, ../sass/screen.scss */
+  /* line 610, ../sass/screen.scss */
   section.contact-us .wrapper {
     margin: 0 auto;
     width: 80%;
   }
-  /* line 587, ../sass/screen.scss */
+  /* line 615, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact {
     float: none;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
   }
-  /* line 593, ../sass/screen.scss */
+  /* line 621, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact form {
     width: 90%;
   }
-  /* line 596, ../sass/screen.scss */
+  /* line 624, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact form h3 {
     margin-left: 0;
     font: bold 26px/normal "Liberation Sans", sans-serif;
     margin-top: 50px;
     text-align: center;
   }
-  /* line 603, ../sass/screen.scss */
+  /* line 631, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact form .list-contacts {
     display: flex;
     flex-flow: column-reverse wrap;
     align-items: center;
     margin-left: 0;
   }
-  /* line 611, ../sass/screen.scss */
+  /* line 639, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact form ul.contact-info {
     margin-left: 0;
   }
-  /* line 616, ../sass/screen.scss */
+  /* line 644, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact form ul.contact-info li input[type="text"], section.contact-us .wrapper .content .contact form ul.contact-info li input[type="email"], section.contact-us .wrapper .content .contact form ul.contact-info li textarea {
     width: 100%;
   }
-  /* line 622, ../sass/screen.scss */
+  /* line 650, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact form input[type="submit"] {
     float: none;
     margin-left: 0;
