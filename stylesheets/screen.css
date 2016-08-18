@@ -662,7 +662,7 @@ footer .wrapper .content h4 {
   }
   /* line 693, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact form ul.contact-info li input[type="text"], section.contact-us .wrapper .content .contact form ul.contact-info li input[type="email"], section.contact-us .wrapper .content .contact form ul.contact-info li textarea {
-    width: 95%;
+    width: 90%;
   }
   /* line 699, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact form input[type="submit"] {
