@@ -626,9 +626,27 @@ footer {
             width: 90%;
           }
 
-          .list-project {
+          ul.list-project {
             li {
               margin-bottom: 50px;
+
+              .block-info {
+                background-color: #f5f5f5;
+
+                a {
+
+                  .name-project {
+                    right: 15px;
+                    width: 80%;
+                    text-align: center;
+                    border-bottom: 1px solid #e0d6d6;
+                  }
+                }
+
+                p {
+                  text-align: center;
+                }
+              }
             }
           }
         }

@@ -622,38 +622,53 @@ footer .wrapper .content h4 {
     width: 90%;
   }
   /* line 630, ../sass/screen.scss */
-  section.portfolio .wrapper .content .list-project li {
+  section.portfolio .wrapper .content ul.list-project li {
     margin-bottom: 50px;
   }
+  /* line 633, ../sass/screen.scss */
+  section.portfolio .wrapper .content ul.list-project li .block-info {
+    background-color: #f5f5f5;
+  }
+  /* line 638, ../sass/screen.scss */
+  section.portfolio .wrapper .content ul.list-project li .block-info a .name-project {
+    right: 15px;
+    width: 80%;
+    text-align: center;
+    border-bottom: 1px solid #e0d6d6;
+  }
+  /* line 646, ../sass/screen.scss */
+  section.portfolio .wrapper .content ul.list-project li .block-info p {
+    text-align: center;
+  }
 
-  /* line 643, ../sass/screen.scss */
+  /* line 661, ../sass/screen.scss */
   section.talk-us .wrapper .content h2 {
     font-size: 50px;
   }
-  /* line 647, ../sass/screen.scss */
+  /* line 665, ../sass/screen.scss */
   section.talk-us .wrapper .content p {
     width: 100%;
   }
 
-  /* line 660, ../sass/screen.scss */
+  /* line 678, ../sass/screen.scss */
   section.contact-us .wrapper .content .map {
     width: 100%;
   }
-  /* line 668, ../sass/screen.scss */
+  /* line 686, ../sass/screen.scss */
   section.contact-us .wrapper .content .address-information .name-header h2 {
     margin: 0 0 50px 0;
     font: 100 35px/normal "Liberation Sans", sans-serif;
   }
-  /* line 675, ../sass/screen.scss */
+  /* line 693, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact {
     float: none;
   }
-  /* line 678, ../sass/screen.scss */
+  /* line 696, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact form {
     margin: 0 auto;
     width: 90%;
   }
-  /* line 682, ../sass/screen.scss */
+  /* line 700, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact form h3 {
     position: relative;
     margin-left: 0;
@@ -662,7 +677,7 @@ footer .wrapper .content h4 {
     margin-top: 50px;
     text-align: center;
   }
-  /* line 691, ../sass/screen.scss */
+  /* line 709, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact form h3:after {
     content: '';
     position: absolute;
@@ -673,15 +688,15 @@ footer .wrapper .content h4 {
     height: 3px;
     background-color: #F16868;
   }
-  /* line 703, ../sass/screen.scss */
+  /* line 721, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact form ul.contact-info {
     margin-left: 0;
   }
-  /* line 708, ../sass/screen.scss */
+  /* line 726, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact form ul.contact-info li input[type="text"], section.contact-us .wrapper .content .contact form ul.contact-info li input[type="email"], section.contact-us .wrapper .content .contact form ul.contact-info li textarea {
     width: 90%;
   }
-  /* line 714, ../sass/screen.scss */
+  /* line 732, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact form input[type="submit"] {
     float: none;
     margin-left: 0;
@@ -713,71 +728,71 @@ footer .wrapper .content h4 {
   section.slider .wrapper .content .fa-chevron-right:hover {
     cursor: pointer;
   }
-  /* line 740, ../sass/screen.scss */
+  /* line 758, ../sass/screen.scss */
   section.slider .wrapper .content .slide-name div span {
     font: bold 15px/1.5em "Ubuntu Light", sans-serif;
   }
 
-  /* line 751, ../sass/screen.scss */
+  /* line 769, ../sass/screen.scss */
   section.about-us .wrapper {
     width: 80%;
     margin: 0 auto;
   }
 
-  /* line 758, ../sass/screen.scss */
+  /* line 776, ../sass/screen.scss */
   section.portfolio .wrapper {
     width: 80%;
     margin: 0 auto;
   }
-  /* line 764, ../sass/screen.scss */
+  /* line 782, ../sass/screen.scss */
   section.portfolio .wrapper .content span.descr {
     width: 100%;
   }
 
-  /* line 778, ../sass/screen.scss */
+  /* line 796, ../sass/screen.scss */
   section.talk-us .wrapper .content p {
     width: 100%;
   }
 
-  /* line 787, ../sass/screen.scss */
+  /* line 805, ../sass/screen.scss */
   section.contact-us .wrapper {
     margin: 0 auto;
     width: 80%;
   }
-  /* line 792, ../sass/screen.scss */
+  /* line 810, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact {
     float: none;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
   }
-  /* line 798, ../sass/screen.scss */
+  /* line 816, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact form {
     width: 90%;
   }
-  /* line 801, ../sass/screen.scss */
+  /* line 819, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact form h3 {
     margin-left: 0;
     font: bold 26px/normal "Liberation Sans", sans-serif;
     margin-top: 50px;
     text-align: center;
   }
-  /* line 808, ../sass/screen.scss */
+  /* line 826, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact form .list-contacts {
     display: flex;
     flex-flow: column-reverse wrap;
     align-items: center;
     margin-left: 0;
   }
-  /* line 816, ../sass/screen.scss */
+  /* line 834, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact form ul.contact-info {
     margin-left: 0;
   }
-  /* line 821, ../sass/screen.scss */
+  /* line 839, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact form ul.contact-info li input[type="text"], section.contact-us .wrapper .content .contact form ul.contact-info li input[type="email"], section.contact-us .wrapper .content .contact form ul.contact-info li textarea {
     width: 100%;
   }
-  /* line 827, ../sass/screen.scss */
+  /* line 845, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact form input[type="submit"] {
     float: none;
     margin-left: 0;
