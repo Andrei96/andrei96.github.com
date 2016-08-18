@@ -546,7 +546,7 @@ footer .wrapper .content h4 {
   color: #fff;
 }
 
-@media handheld and (max-width: 750px) {
+@media (max-width: 750px) {
   /* line 524, ../sass/screen.scss */
   p.descr, span.descr {
     width: 90%;

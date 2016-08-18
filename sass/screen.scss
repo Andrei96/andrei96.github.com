@@ -519,7 +519,7 @@ footer {
 }
 
 
-@media handheld and (max-width: 750px) {
+@media (max-width: 750px) {
 
     p.descr, span.descr {
       width: 90%;
