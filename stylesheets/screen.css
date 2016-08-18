@@ -548,7 +548,7 @@ footer .wrapper .content h4 {
 
 @media (max-width: 750px) {
   /* line 524, ../sass/screen.scss */
-  p.descr, span.descr {
+  p.descr {
     width: 90%;
     margin: 0 auto 50px auto;
   }
@@ -602,16 +602,55 @@ footer .wrapper .content h4 {
 
   /* line 610, ../sass/screen.scss */
   section.portfolio .wrapper .content span.descr {
-    width: 100%;
+    width: 90%;
+  }
+  /* line 615, ../sass/screen.scss */
+  section.portfolio .wrapper .content .list-project li {
+    margin-bottom: 50px;
   }
 
-  /* line 622, ../sass/screen.scss */
+  /* line 628, ../sass/screen.scss */
   section.talk-us .wrapper .content h2 {
     font-size: 50px;
   }
-  /* line 626, ../sass/screen.scss */
+  /* line 632, ../sass/screen.scss */
   section.talk-us .wrapper .content p {
     width: 100%;
+  }
+
+  /* line 645, ../sass/screen.scss */
+  section.contact-us .wrapper .content .map {
+    width: 100%;
+  }
+  /* line 649, ../sass/screen.scss */
+  section.contact-us .wrapper .content .contact {
+    float: none;
+  }
+  /* line 652, ../sass/screen.scss */
+  section.contact-us .wrapper .content .contact form {
+    margin: 0 auto;
+    width: 90%;
+  }
+  /* line 656, ../sass/screen.scss */
+  section.contact-us .wrapper .content .contact form h3 {
+    margin-left: 0;
+    font: bold 26px/normal "Liberation Sans", sans-serif;
+    margin-top: 50px;
+    text-align: center;
+  }
+  /* line 663, ../sass/screen.scss */
+  section.contact-us .wrapper .content .contact form ul.contact-info {
+    margin-left: 0;
+  }
+  /* line 668, ../sass/screen.scss */
+  section.contact-us .wrapper .content .contact form ul.contact-info li input[type="text"], section.contact-us .wrapper .content .contact form ul.contact-info li input[type="email"], section.contact-us .wrapper .content .contact form ul.contact-info li textarea {
+    width: 95%;
+  }
+  /* line 674, ../sass/screen.scss */
+  section.contact-us .wrapper .content .contact form input[type="submit"] {
+    float: none;
+    margin-left: 0;
+    width: 60%;
   }
 }
 @media screen and (min-width: 760px) and (max-width: 1024px) {
@@ -639,71 +678,71 @@ footer .wrapper .content h4 {
   section.slider .wrapper .content .fa-chevron-right:hover {
     cursor: pointer;
   }
-  /* line 647, ../sass/screen.scss */
+  /* line 700, ../sass/screen.scss */
   section.slider .wrapper .content .slide-name div span {
     font: bold 15px/1.5em "Ubuntu Light", sans-serif;
   }
 
-  /* line 658, ../sass/screen.scss */
+  /* line 711, ../sass/screen.scss */
   section.about-us .wrapper {
     width: 80%;
     margin: 0 auto;
   }
 
-  /* line 665, ../sass/screen.scss */
+  /* line 718, ../sass/screen.scss */
   section.portfolio .wrapper {
     width: 80%;
     margin: 0 auto;
   }
-  /* line 671, ../sass/screen.scss */
+  /* line 724, ../sass/screen.scss */
   section.portfolio .wrapper .content span.descr {
     width: 100%;
   }
 
-  /* line 685, ../sass/screen.scss */
+  /* line 738, ../sass/screen.scss */
   section.talk-us .wrapper .content p {
     width: 100%;
   }
 
-  /* line 694, ../sass/screen.scss */
+  /* line 747, ../sass/screen.scss */
   section.contact-us .wrapper {
     margin: 0 auto;
     width: 80%;
   }
-  /* line 699, ../sass/screen.scss */
+  /* line 752, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact {
     float: none;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
   }
-  /* line 705, ../sass/screen.scss */
+  /* line 758, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact form {
     width: 90%;
   }
-  /* line 708, ../sass/screen.scss */
+  /* line 761, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact form h3 {
     margin-left: 0;
     font: bold 26px/normal "Liberation Sans", sans-serif;
     margin-top: 50px;
     text-align: center;
   }
-  /* line 715, ../sass/screen.scss */
+  /* line 768, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact form .list-contacts {
     display: flex;
     flex-flow: column-reverse wrap;
     align-items: center;
     margin-left: 0;
   }
-  /* line 723, ../sass/screen.scss */
+  /* line 776, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact form ul.contact-info {
     margin-left: 0;
   }
-  /* line 728, ../sass/screen.scss */
+  /* line 781, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact form ul.contact-info li input[type="text"], section.contact-us .wrapper .content .contact form ul.contact-info li input[type="email"], section.contact-us .wrapper .content .contact form ul.contact-info li textarea {
     width: 100%;
   }
-  /* line 734, ../sass/screen.scss */
+  /* line 787, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact form input[type="submit"] {
     float: none;
     margin-left: 0;

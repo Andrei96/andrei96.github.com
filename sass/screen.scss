@@ -521,7 +521,7 @@ footer {
 
 @media (max-width: 750px) {
 
-    p.descr, span.descr {
+    p.descr {
       width: 90%;
       margin: 0 auto 50px auto;
     }
@@ -566,7 +566,7 @@ footer {
 
         .content {
           padding: 15px 20px;
-          
+
           h2 {
             font-size: 0.5em;
           }
@@ -608,7 +608,13 @@ footer {
         .content {
 
           span.descr {
-            width: 100%;
+            width: 90%;
+          }
+
+          .list-project {
+            li {
+              margin-bottom: 50px;
+            }
           }
         }
       }
@@ -627,6 +633,53 @@ footer {
           width: 100%;
         }
       }
+    }
+  }
+
+  section.contact-us {
+
+    .wrapper {
+
+      .content {
+
+        .map {
+          width: 100%;
+        }
+
+        .contact {
+          float: none;
+
+          form {
+            margin: 0 auto;
+            width: 90%;
+
+            h3 {
+              margin-left: 0;
+              font: bold 26px/normal "Liberation Sans", sans-serif;
+              margin-top: 50px;
+              text-align: center;
+            }
+
+            ul.contact-info {
+              margin-left: 0;
+              
+              li {
+
+                input[type="text"], input[type="email"], textarea {
+                  width: 95%;
+                }
+              }
+            }
+
+            input[type="submit"] {
+              float: none;
+              margin-left: 0;
+              width: 60%;
+            }
+          }
+        }
+      }
+
     }
   }
 }
