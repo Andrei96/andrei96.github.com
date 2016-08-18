@@ -636,7 +636,7 @@ footer {
     }
   }
 
-  section.contact-us {
+    section.contact-us {
 
     .wrapper {
 
@@ -644,6 +644,17 @@ footer {
 
         .map {
           width: 100%;
+        }
+
+        .address-information {
+
+          .name-header {
+
+            h2 {
+              margin: 0 0 50px 0;
+              @include font_style(35, 100);
+            }
+          }
         }
 
         .contact {
@@ -654,15 +665,29 @@ footer {
             width: 90%;
 
             h3 {
+              position: relative;
               margin-left: 0;
-              font: bold 26px/normal "Liberation Sans", sans-serif;
+              margin-bottom: 50px;
+              @include font_style(35, 100);
+              //font: bold 26px/normal "Liberation Sans", sans-serif;
               margin-top: 50px;
               text-align: center;
+
+              &:after {
+                content: '';
+                position: absolute;
+                bottom: -5px;
+                left: 50%;
+                transform: translate(-50%);
+                width: 170px;
+                height: 3px;
+                background-color: #F16868;
+              }
             }
 
             ul.contact-info {
               margin-left: 0;
-              
+
               li {
 
                 input[type="text"], input[type="email"], textarea {
