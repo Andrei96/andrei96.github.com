@@ -99,15 +99,19 @@ header .wrapper .content {
   padding: 35px 0;
 }
 /* line 52, ../sass/screen.scss */
+header .wrapper .content .gamburger-list {
+  display: none;
+}
+/* line 56, ../sass/screen.scss */
 header .wrapper .content .logo-name {
   padding-top: 10px;
   font: bold 22px/0 "Liberation Sans", sans-serif;
 }
-/* line 57, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 header .wrapper .content .menu-list {
   text-transform: uppercase;
 }
-/* line 62, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 header .wrapper .content .menu-list ul li {
   display: inline;
   margin-right: 30px;
@@ -125,15 +129,15 @@ header .wrapper .content .menu-list ul li:first-child a:after {
   content: "\f0dd";
   color: #f36b47;
 }
-/* line 67, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 header .wrapper .content .menu-list ul li a {
   position: relative;
 }
-/* line 70, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 header .wrapper .content .menu-list ul li a:hover {
   border-bottom: 2px solid #f36b47;
 }
-/* line 73, ../sass/screen.scss */
+/* line 77, ../sass/screen.scss */
 header .wrapper .content .menu-list ul li a:hover:after {
   position: absolute;
   top: 8px;
@@ -142,12 +146,12 @@ header .wrapper .content .menu-list ul li a:hover:after {
   content: "\f0dd";
   color: #f36b47;
 }
-/* line 84, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 header .wrapper .content .menu-list ul li:last-child {
   margin-right: 0;
 }
 
-/* line 95, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 section.slider {
   position: relative;
 }
@@ -175,12 +179,12 @@ section.slider .wrapper .content .fa-chevron-right {
 section.slider .wrapper .content .fa-chevron-right:hover {
   cursor: pointer;
 }
-/* line 104, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
 section.slider .wrapper .content img {
   display: block;
   width: 100%;
 }
-/* line 109, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 section.slider .wrapper .content .slide-name {
   position: absolute;
   top: 50%;
@@ -188,7 +192,7 @@ section.slider .wrapper .content .slide-name {
   text-align: center;
   transform: translate(-50%, -50%);
 }
-/* line 118, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 section.slider .wrapper .content .slide-name div span {
   padding: 10px 80px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -196,67 +200,67 @@ section.slider .wrapper .content .slide-name div span {
   color: white;
   text-transform: capitalize;
 }
-/* line 126, ../sass/screen.scss */
+/* line 130, ../sass/screen.scss */
 section.slider .wrapper .content .slide-name div:first-child {
   margin-bottom: 20px;
 }
 
-/* line 138, ../sass/screen.scss */
+/* line 142, ../sass/screen.scss */
 section.description .wrapper {
   background-color: #f36b47;
 }
-/* line 141, ../sass/screen.scss */
+/* line 145, ../sass/screen.scss */
 section.description .wrapper .content {
   padding: 37px 20px;
 }
-/* line 144, ../sass/screen.scss */
+/* line 148, ../sass/screen.scss */
 section.description .wrapper .content h2 {
   font: normal 21px/normal "Liberation Sans", sans-serif;
   color: white;
   text-align: center;
 }
-/* line 149, ../sass/screen.scss */
+/* line 153, ../sass/screen.scss */
 section.description .wrapper .content h2 > span {
   text-transform: uppercase;
   font-weight: bold;
   border-bottom: 0.1px solid white;
 }
 
-/* line 160, ../sass/screen.scss */
+/* line 164, ../sass/screen.scss */
 section.about-us {
   overflow: hidden;
 }
-/* line 166, ../sass/screen.scss */
+/* line 170, ../sass/screen.scss */
 section.about-us .wrapper .content p.descr {
   margin-bottom: 50px;
   font: normal 16px/2em "Liberation Sans", sans-serif;
   color: #a3a2a2;
   text-align: center;
 }
-/* line 173, ../sass/screen.scss */
+/* line 177, ../sass/screen.scss */
 section.about-us .wrapper .content ul {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
 }
-/* line 178, ../sass/screen.scss */
+/* line 182, ../sass/screen.scss */
 section.about-us .wrapper .content ul li {
   width: 220px;
 }
-/* line 181, ../sass/screen.scss */
+/* line 185, ../sass/screen.scss */
 section.about-us .wrapper .content ul li span {
   display: block;
   font: normal 20px/normal "Liberation Sans", sans-serif;
   text-align: center;
 }
-/* line 186, ../sass/screen.scss */
+/* line 190, ../sass/screen.scss */
 section.about-us .wrapper .content ul li span.fa {
   margin-bottom: 10px;
   font-family: 'FontAwesome';
   color: #f36b47;
   font-size: 30px;
 }
-/* line 194, ../sass/screen.scss */
+/* line 198, ../sass/screen.scss */
 section.about-us .wrapper .content ul li p {
   margin-top: 10px;
   color: #a3a2a2;
@@ -264,20 +268,20 @@ section.about-us .wrapper .content ul li p {
   text-align: left;
   line-height: 1.5em;
 }
-/* line 201, ../sass/screen.scss */
+/* line 205, ../sass/screen.scss */
 section.about-us .wrapper .content ul li:last-child {
   margin-right: 0;
 }
 
-/* line 211, ../sass/screen.scss */
+/* line 215, ../sass/screen.scss */
 section.portfolio {
   margin-top: 50px;
 }
-/* line 218, ../sass/screen.scss */
+/* line 222, ../sass/screen.scss */
 section.portfolio .wrapper .content h2 {
   margin: 0 0 50px 0;
 }
-/* line 222, ../sass/screen.scss */
+/* line 226, ../sass/screen.scss */
 section.portfolio .wrapper .content span.descr {
   display: inline-block;
   margin-bottom: 21px;
@@ -285,23 +289,23 @@ section.portfolio .wrapper .content span.descr {
   font: normal 16px/normal "Liberation Sans", sans-serif;
   color: #a3a2a2;
 }
-/* line 230, ../sass/screen.scss */
+/* line 234, ../sass/screen.scss */
 section.portfolio .wrapper .content ul.list-project {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
 }
-/* line 237, ../sass/screen.scss */
+/* line 241, ../sass/screen.scss */
 section.portfolio .wrapper .content ul.list-project li img {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   opacity: 2;
 }
-/* line 243, ../sass/screen.scss */
+/* line 247, ../sass/screen.scss */
 section.portfolio .wrapper .content ul.list-project li .block-info {
   margin-top: -3px;
   border: 1px solid #d5d3d3;
 }
-/* line 247, ../sass/screen.scss */
+/* line 251, ../sass/screen.scss */
 section.portfolio .wrapper .content ul.list-project li .block-info .name-project {
   position: relative;
   width: 90%;
@@ -314,7 +318,7 @@ section.portfolio .wrapper .content ul.list-project li .block-info .name-project
   color: #f36b47;
   border-bottom: 1px solid #d5d3d3;
 }
-/* line 260, ../sass/screen.scss */
+/* line 264, ../sass/screen.scss */
 section.portfolio .wrapper .content ul.list-project li .block-info p {
   margin-top: 10px;
   padding-bottom: 8px;
@@ -323,7 +327,7 @@ section.portfolio .wrapper .content ul.list-project li .block-info p {
   text-align: right;
   color: #605f5f;
 }
-/* line 275, ../sass/screen.scss */
+/* line 279, ../sass/screen.scss */
 section.portfolio .wrapper .content ul.description-project li {
   margin-top: -2px;
   margin-right: 56px;
@@ -331,11 +335,11 @@ section.portfolio .wrapper .content ul.description-project li {
   padding: 0 7px 3px;
   background-color: #eee;
 }
-/* line 282, ../sass/screen.scss */
+/* line 286, ../sass/screen.scss */
 section.portfolio .wrapper .content ul.description-project li:last-child {
   margin-right: 0;
 }
-/* line 288, ../sass/screen.scss */
+/* line 292, ../sass/screen.scss */
 section.portfolio .wrapper .content ul.description-project li a span.name-project {
   display: block;
   position: relative;
@@ -345,7 +349,7 @@ section.portfolio .wrapper .content ul.description-project li a span.name-projec
   color: #f36b47;
   border-bottom: 1px solid #d5d3d3;
 }
-/* line 297, ../sass/screen.scss */
+/* line 301, ../sass/screen.scss */
 section.portfolio .wrapper .content ul.description-project li a span.name-project:before {
   position: absolute;
   bottom: 34px;
@@ -361,7 +365,7 @@ section.portfolio .wrapper .content ul.description-project li a span.name-projec
   text-align: center;
   padding-top: 60px;
 }
-/* line 315, ../sass/screen.scss */
+/* line 319, ../sass/screen.scss */
 section.portfolio .wrapper .content ul.description-project li p {
   margin-top: 10px;
   padding-bottom: 5px;
@@ -371,18 +375,18 @@ section.portfolio .wrapper .content ul.description-project li p {
   color: #605f5f;
 }
 
-/* line 330, ../sass/screen.scss */
+/* line 334, ../sass/screen.scss */
 section.talk-us {
   margin-top: 50px;
 }
-/* line 335, ../sass/screen.scss */
+/* line 339, ../sass/screen.scss */
 section.talk-us .wrapper .content {
   padding: 50px;
   background-color: #7a7a7a;
   clear: both;
   text-align: center;
 }
-/* line 341, ../sass/screen.scss */
+/* line 345, ../sass/screen.scss */
 section.talk-us .wrapper .content h2 {
   margin-top: 20px;
   margin-bottom: 30px;
@@ -391,7 +395,7 @@ section.talk-us .wrapper .content h2 {
   text-transform: capitalize;
   color: #fff;
 }
-/* line 350, ../sass/screen.scss */
+/* line 354, ../sass/screen.scss */
 section.talk-us .wrapper .content p {
   display: inline-block;
   margin-bottom: 50px;
@@ -401,98 +405,98 @@ section.talk-us .wrapper .content p {
   line-height: 1.5em;
 }
 
-/* line 363, ../sass/screen.scss */
+/* line 367, ../sass/screen.scss */
 section.contact-us {
   margin-top: 70px;
   overflow: hidden;
 }
-/* line 369, ../sass/screen.scss */
+/* line 373, ../sass/screen.scss */
 section.contact-us .wrapper .content {
   text-align: center;
 }
-/* line 374, ../sass/screen.scss */
+/* line 378, ../sass/screen.scss */
 section.contact-us .wrapper .content .address-information p.descr {
   display: inline-block;
   margin-bottom: 50px;
   font: 500 16px/1.5em "Liberation Sans", sans-serif;
   color: #a3a2a2;
 }
-/* line 382, ../sass/screen.scss */
+/* line 386, ../sass/screen.scss */
 section.contact-us .wrapper .content .map {
   display: inline-block;
 }
-/* line 386, ../sass/screen.scss */
+/* line 390, ../sass/screen.scss */
 section.contact-us .wrapper .content .contact {
   float: right;
 }
-/* line 389, ../sass/screen.scss */
+/* line 393, ../sass/screen.scss */
 section.contact-us .wrapper .content .contact .contacts-responsive {
   display: none;
 }
-/* line 395, ../sass/screen.scss */
+/* line 399, ../sass/screen.scss */
 section.contact-us .wrapper .content .contact form h3 {
   margin-left: 40px;
   text-align: left;
   font: bold 20px/normal "Liberation Sans", sans-serif;
   margin-bottom: 15px;
 }
-/* line 402, ../sass/screen.scss */
+/* line 406, ../sass/screen.scss */
 section.contact-us .wrapper .content .contact form .list-contacts {
   margin-left: 90px;
   text-align: left;
 }
-/* line 406, ../sass/screen.scss */
+/* line 410, ../sass/screen.scss */
 section.contact-us .wrapper .content .contact form .list-contacts li {
   margin: 0 0 20px 0;
 }
-/* line 409, ../sass/screen.scss */
+/* line 413, ../sass/screen.scss */
 section.contact-us .wrapper .content .contact form .list-contacts li span:first-child {
   margin-right: 20px;
   color: #f36b47;
 }
-/* line 414, ../sass/screen.scss */
+/* line 418, ../sass/screen.scss */
 section.contact-us .wrapper .content .contact form .list-contacts li span:last-child {
   color: #a3a2a2;
 }
-/* line 417, ../sass/screen.scss */
+/* line 421, ../sass/screen.scss */
 section.contact-us .wrapper .content .contact form .list-contacts li:last-child {
   overflow: hidden;
 }
-/* line 420, ../sass/screen.scss */
+/* line 424, ../sass/screen.scss */
 section.contact-us .wrapper .content .contact form .list-contacts li:last-child span:first-child {
   float: left;
   margin-right: 30px;
 }
-/* line 425, ../sass/screen.scss */
+/* line 429, ../sass/screen.scss */
 section.contact-us .wrapper .content .contact form .list-contacts li:last-child span:last-child {
   float: left;
   width: 200px;
 }
-/* line 433, ../sass/screen.scss */
+/* line 437, ../sass/screen.scss */
 section.contact-us .wrapper .content .contact form ul.contact-info {
   margin-left: 90px;
 }
-/* line 439, ../sass/screen.scss */
+/* line 443, ../sass/screen.scss */
 section.contact-us .wrapper .content .contact form ul.contact-info li:first-child, section.contact-us .wrapper .content .contact form ul.contact-info li:nth-child(2), section.contact-us .wrapper .content .contact form ul.contact-info li:last-child {
   margin-bottom: 6px;
 }
-/* line 443, ../sass/screen.scss */
+/* line 447, ../sass/screen.scss */
 section.contact-us .wrapper .content .contact form ul.contact-info li div.list-address {
   text-align: left;
   width: 289px;
 }
-/* line 447, ../sass/screen.scss */
+/* line 451, ../sass/screen.scss */
 section.contact-us .wrapper .content .contact form ul.contact-info li div.list-address span {
   display: inline;
   color: #9d9c9c;
 }
-/* line 451, ../sass/screen.scss */
+/* line 455, ../sass/screen.scss */
 section.contact-us .wrapper .content .contact form ul.contact-info li div.list-address span .fa {
   margin-right: 20px;
   font-size: 20px;
   color: #f27554;
 }
-/* line 459, ../sass/screen.scss */
+/* line 463, ../sass/screen.scss */
 section.contact-us .wrapper .content .contact form ul.contact-info li input[type="text"], section.contact-us .wrapper .content .contact form ul.contact-info li input[type="email"], section.contact-us .wrapper .content .contact form ul.contact-info li textarea {
   display: inherit;
   padding: 15px;
@@ -501,13 +505,13 @@ section.contact-us .wrapper .content .contact form ul.contact-info li input[type
   font-size: 14px;
   background-color: #f0f0f0;
 }
-/* line 468, ../sass/screen.scss */
+/* line 472, ../sass/screen.scss */
 section.contact-us .wrapper .content .contact form ul.contact-info li textarea {
   width: 450px;
   height: 150px;
   resize: none;
 }
-/* line 476, ../sass/screen.scss */
+/* line 480, ../sass/screen.scss */
 section.contact-us .wrapper .content .contact form input[type="submit"] {
   float: left;
   margin-left: 90px;
@@ -519,26 +523,26 @@ section.contact-us .wrapper .content .contact form input[type="submit"] {
   font-size: 18px;
   color: white;
 }
-/* line 486, ../sass/screen.scss */
+/* line 490, ../sass/screen.scss */
 section.contact-us .wrapper .content .contact form input[type="submit"]:active {
   color: #f36b47;
   background-color: inherit;
 }
 
-/* line 498, ../sass/screen.scss */
+/* line 502, ../sass/screen.scss */
 footer {
   position: relative;
   bottom: -200px;
   margin-top: 70px;
 }
-/* line 505, ../sass/screen.scss */
+/* line 509, ../sass/screen.scss */
 footer .wrapper .content {
   position: relative;
   bottom: 90px;
   clear: both;
   background-color: #f27554;
 }
-/* line 511, ../sass/screen.scss */
+/* line 515, ../sass/screen.scss */
 footer .wrapper .content h4 {
   position: relative;
   padding: 30px 0;
@@ -547,96 +551,109 @@ footer .wrapper .content h4 {
 }
 
 @media (max-width: 750px) {
-  /* line 524, ../sass/screen.scss */
+  /* line 528, ../sass/screen.scss */
   p.descr {
     width: 90%;
     margin: 0 auto 50px auto;
   }
 
-  /* line 534, ../sass/screen.scss */
+  /* line 538, ../sass/screen.scss */
+  header .wrapper .content .logo-name {
+    font: 100 35px/0 "Liberation Sans", sans-serif;
+  }
+  /* line 541, ../sass/screen.scss */
+  header .wrapper .content .gamburger-list {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #f36b47;
+    font-size: 20px;
+  }
+  /* line 549, ../sass/screen.scss */
   header .wrapper .content .menu-list {
     display: none;
   }
 
-  /* line 547, ../sass/screen.scss */
+  /* line 562, ../sass/screen.scss */
   section.slider .wrapper .content span.fa {
     font-size: 25px;
   }
-  /* line 551, ../sass/screen.scss */
+  /* line 566, ../sass/screen.scss */
   section.slider .wrapper .content .slide-name {
     width: 100%;
   }
-  /* line 554, ../sass/screen.scss */
+  /* line 569, ../sass/screen.scss */
   section.slider .wrapper .content .slide-name div span {
     padding: 5px 10px;
     font-size: 10px;
   }
 
-  /* line 567, ../sass/screen.scss */
+  /* line 582, ../sass/screen.scss */
   section.description .wrapper .content {
     padding: 15px 20px;
   }
-  /* line 570, ../sass/screen.scss */
+  /* line 585, ../sass/screen.scss */
   section.description .wrapper .content h2 {
     font-size: 0.5em;
   }
 
-  /* line 583, ../sass/screen.scss */
+  /* line 598, ../sass/screen.scss */
   section.about-us .wrapper .content ul {
     border-bottom: 10px solid #f36b47;
     border-top: 10px solid #f36b47;
     padding: 50px 0;
   }
-  /* line 588, ../sass/screen.scss */
+  /* line 603, ../sass/screen.scss */
   section.about-us .wrapper .content ul li {
     margin-bottom: 50px;
   }
-  /* line 591, ../sass/screen.scss */
+  /* line 606, ../sass/screen.scss */
   section.about-us .wrapper .content ul li p {
     text-align: center;
   }
-  /* line 595, ../sass/screen.scss */
+  /* line 610, ../sass/screen.scss */
   section.about-us .wrapper .content ul li:last-child {
     margin-bottom: 0;
   }
 
-  /* line 610, ../sass/screen.scss */
+  /* line 625, ../sass/screen.scss */
   section.portfolio .wrapper .content span.descr {
     width: 90%;
   }
-  /* line 615, ../sass/screen.scss */
+  /* line 630, ../sass/screen.scss */
   section.portfolio .wrapper .content .list-project li {
     margin-bottom: 50px;
   }
 
-  /* line 628, ../sass/screen.scss */
+  /* line 643, ../sass/screen.scss */
   section.talk-us .wrapper .content h2 {
     font-size: 50px;
   }
-  /* line 632, ../sass/screen.scss */
+  /* line 647, ../sass/screen.scss */
   section.talk-us .wrapper .content p {
     width: 100%;
   }
 
-  /* line 645, ../sass/screen.scss */
+  /* line 660, ../sass/screen.scss */
   section.contact-us .wrapper .content .map {
     width: 100%;
   }
-  /* line 653, ../sass/screen.scss */
+  /* line 668, ../sass/screen.scss */
   section.contact-us .wrapper .content .address-information .name-header h2 {
     margin: 0 0 50px 0;
     font: 100 35px/normal "Liberation Sans", sans-serif;
   }
-  /* line 660, ../sass/screen.scss */
+  /* line 675, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact {
     float: none;
   }
-  /* line 663, ../sass/screen.scss */
+  /* line 678, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact form {
     margin: 0 auto;
     width: 90%;
   }
-  /* line 667, ../sass/screen.scss */
+  /* line 682, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact form h3 {
     position: relative;
     margin-left: 0;
@@ -645,7 +662,7 @@ footer .wrapper .content h4 {
     margin-top: 50px;
     text-align: center;
   }
-  /* line 676, ../sass/screen.scss */
+  /* line 691, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact form h3:after {
     content: '';
     position: absolute;
@@ -656,15 +673,15 @@ footer .wrapper .content h4 {
     height: 3px;
     background-color: #F16868;
   }
-  /* line 688, ../sass/screen.scss */
+  /* line 703, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact form ul.contact-info {
     margin-left: 0;
   }
-  /* line 693, ../sass/screen.scss */
+  /* line 708, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact form ul.contact-info li input[type="text"], section.contact-us .wrapper .content .contact form ul.contact-info li input[type="email"], section.contact-us .wrapper .content .contact form ul.contact-info li textarea {
     width: 90%;
   }
-  /* line 699, ../sass/screen.scss */
+  /* line 714, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact form input[type="submit"] {
     float: none;
     margin-left: 0;
@@ -696,71 +713,71 @@ footer .wrapper .content h4 {
   section.slider .wrapper .content .fa-chevron-right:hover {
     cursor: pointer;
   }
-  /* line 725, ../sass/screen.scss */
+  /* line 740, ../sass/screen.scss */
   section.slider .wrapper .content .slide-name div span {
     font: bold 15px/1.5em "Ubuntu Light", sans-serif;
   }
 
-  /* line 736, ../sass/screen.scss */
+  /* line 751, ../sass/screen.scss */
   section.about-us .wrapper {
     width: 80%;
     margin: 0 auto;
   }
 
-  /* line 743, ../sass/screen.scss */
+  /* line 758, ../sass/screen.scss */
   section.portfolio .wrapper {
     width: 80%;
     margin: 0 auto;
   }
-  /* line 749, ../sass/screen.scss */
+  /* line 764, ../sass/screen.scss */
   section.portfolio .wrapper .content span.descr {
     width: 100%;
   }
 
-  /* line 763, ../sass/screen.scss */
+  /* line 778, ../sass/screen.scss */
   section.talk-us .wrapper .content p {
     width: 100%;
   }
 
-  /* line 772, ../sass/screen.scss */
+  /* line 787, ../sass/screen.scss */
   section.contact-us .wrapper {
     margin: 0 auto;
     width: 80%;
   }
-  /* line 777, ../sass/screen.scss */
+  /* line 792, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact {
     float: none;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
   }
-  /* line 783, ../sass/screen.scss */
+  /* line 798, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact form {
     width: 90%;
   }
-  /* line 786, ../sass/screen.scss */
+  /* line 801, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact form h3 {
     margin-left: 0;
     font: bold 26px/normal "Liberation Sans", sans-serif;
     margin-top: 50px;
     text-align: center;
   }
-  /* line 793, ../sass/screen.scss */
+  /* line 808, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact form .list-contacts {
     display: flex;
     flex-flow: column-reverse wrap;
     align-items: center;
     margin-left: 0;
   }
-  /* line 801, ../sass/screen.scss */
+  /* line 816, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact form ul.contact-info {
     margin-left: 0;
   }
-  /* line 806, ../sass/screen.scss */
+  /* line 821, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact form ul.contact-info li input[type="text"], section.contact-us .wrapper .content .contact form ul.contact-info li input[type="email"], section.contact-us .wrapper .content .contact form ul.contact-info li textarea {
     width: 100%;
   }
-  /* line 812, ../sass/screen.scss */
+  /* line 827, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact form input[type="submit"] {
     float: none;
     margin-left: 0;
