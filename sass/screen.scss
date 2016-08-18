@@ -35,7 +35,7 @@ span.style-header {
     section.portfolio .wrapper,
     section.contact-us .wrapper {
       margin: 0 auto;
-      width: 1200px;
+      width: 100%;
       max-width: 1200px;
 }
 
@@ -401,22 +401,27 @@ section.contact-us {
 
             .list-contacts {
               margin-left: 90px;
+              text-align: left;
 
               li {
                 margin: 0 0 20px 0;
+
                 span:first-child {
                   margin-right: 20px;
                   color: $color;
                 }
+
                 span:last-child {
                   color: #a3a2a2;
                 }
                 &:last-child {
                   overflow: hidden;
+
                   span:first-child {
                     float: left;
                     margin-right: 30px;
                   }
+
                   span:last-child {
                     float: left;
                     width: 200px;
@@ -427,6 +432,7 @@ section.contact-us {
 
             ul.contact-info {
               margin-left: 90px;
+
 
               li {
 
@@ -547,6 +553,14 @@ footer {
       .wrapper {
         width: 80%;
         margin: 0 auto;
+
+        .content {
+
+          span.descr {
+            width: 100%;
+          }
+
+        }
       }
     }
 
@@ -572,14 +586,43 @@ footer {
 
           .contact {
             float: none;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
 
             form {
+              width: 90%;
 
               h3 {
                 margin-left: 0;
                 font: bold 26px/normal "Liberation Sans", sans-serif;
                 margin-top: 50px;
                 text-align: center;
+              }
+
+              .list-contacts {
+                display: flex;
+                flex-flow: column-reverse wrap;
+                align-items: center;
+                margin-left: 0;
+
+              }
+
+              ul.contact-info {
+                margin-left: 0;
+
+                li {
+
+                  input[type="text"], input[type="email"], textarea {
+                   width: 100%;
+                  }
+                }
+              }
+
+              input[type="submit"] {
+                float: none;
+                margin-left: 0;
+                width: 60%;
               }
             }
           }

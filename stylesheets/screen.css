@@ -88,7 +88,7 @@ section.about-us .wrapper,
 section.portfolio .wrapper,
 section.contact-us .wrapper {
   margin: 0 auto;
-  width: 1200px;
+  width: 100%;
   max-width: 1200px;
 }
 
@@ -439,59 +439,60 @@ section.contact-us .wrapper .content .contact form h3 {
 /* line 402, ../sass/screen.scss */
 section.contact-us .wrapper .content .contact form .list-contacts {
   margin-left: 90px;
+  text-align: left;
 }
-/* line 405, ../sass/screen.scss */
+/* line 406, ../sass/screen.scss */
 section.contact-us .wrapper .content .contact form .list-contacts li {
   margin: 0 0 20px 0;
 }
-/* line 407, ../sass/screen.scss */
+/* line 409, ../sass/screen.scss */
 section.contact-us .wrapper .content .contact form .list-contacts li span:first-child {
   margin-right: 20px;
   color: #f36b47;
 }
-/* line 411, ../sass/screen.scss */
+/* line 414, ../sass/screen.scss */
 section.contact-us .wrapper .content .contact form .list-contacts li span:last-child {
   color: #a3a2a2;
 }
-/* line 414, ../sass/screen.scss */
+/* line 417, ../sass/screen.scss */
 section.contact-us .wrapper .content .contact form .list-contacts li:last-child {
   overflow: hidden;
 }
-/* line 416, ../sass/screen.scss */
+/* line 420, ../sass/screen.scss */
 section.contact-us .wrapper .content .contact form .list-contacts li:last-child span:first-child {
   float: left;
   margin-right: 30px;
 }
-/* line 420, ../sass/screen.scss */
+/* line 425, ../sass/screen.scss */
 section.contact-us .wrapper .content .contact form .list-contacts li:last-child span:last-child {
   float: left;
   width: 200px;
 }
-/* line 428, ../sass/screen.scss */
+/* line 433, ../sass/screen.scss */
 section.contact-us .wrapper .content .contact form ul.contact-info {
   margin-left: 90px;
 }
-/* line 433, ../sass/screen.scss */
+/* line 439, ../sass/screen.scss */
 section.contact-us .wrapper .content .contact form ul.contact-info li:first-child, section.contact-us .wrapper .content .contact form ul.contact-info li:nth-child(2), section.contact-us .wrapper .content .contact form ul.contact-info li:last-child {
   margin-bottom: 6px;
 }
-/* line 437, ../sass/screen.scss */
+/* line 443, ../sass/screen.scss */
 section.contact-us .wrapper .content .contact form ul.contact-info li div.list-address {
   text-align: left;
   width: 289px;
 }
-/* line 441, ../sass/screen.scss */
+/* line 447, ../sass/screen.scss */
 section.contact-us .wrapper .content .contact form ul.contact-info li div.list-address span {
   display: inline;
   color: #9d9c9c;
 }
-/* line 445, ../sass/screen.scss */
+/* line 451, ../sass/screen.scss */
 section.contact-us .wrapper .content .contact form ul.contact-info li div.list-address span .fa {
   margin-right: 20px;
   font-size: 20px;
   color: #f27554;
 }
-/* line 453, ../sass/screen.scss */
+/* line 459, ../sass/screen.scss */
 section.contact-us .wrapper .content .contact form ul.contact-info li input[type="text"], section.contact-us .wrapper .content .contact form ul.contact-info li input[type="email"], section.contact-us .wrapper .content .contact form ul.contact-info li textarea {
   display: inherit;
   padding: 15px;
@@ -500,13 +501,13 @@ section.contact-us .wrapper .content .contact form ul.contact-info li input[type
   font-size: 14px;
   background-color: #f0f0f0;
 }
-/* line 462, ../sass/screen.scss */
+/* line 468, ../sass/screen.scss */
 section.contact-us .wrapper .content .contact form ul.contact-info li textarea {
   width: 450px;
   height: 150px;
   resize: none;
 }
-/* line 470, ../sass/screen.scss */
+/* line 476, ../sass/screen.scss */
 section.contact-us .wrapper .content .contact form input[type="submit"] {
   float: left;
   margin-left: 90px;
@@ -518,26 +519,26 @@ section.contact-us .wrapper .content .contact form input[type="submit"] {
   font-size: 18px;
   color: white;
 }
-/* line 480, ../sass/screen.scss */
+/* line 486, ../sass/screen.scss */
 section.contact-us .wrapper .content .contact form input[type="submit"]:active {
   color: #f36b47;
   background-color: inherit;
 }
 
-/* line 492, ../sass/screen.scss */
+/* line 498, ../sass/screen.scss */
 footer {
   position: relative;
   bottom: -200px;
   margin-top: 70px;
 }
-/* line 499, ../sass/screen.scss */
+/* line 505, ../sass/screen.scss */
 footer .wrapper .content {
   position: relative;
   bottom: 90px;
   clear: both;
   background-color: #f27554;
 }
-/* line 505, ../sass/screen.scss */
+/* line 511, ../sass/screen.scss */
 footer .wrapper .content h4 {
   position: relative;
   padding: 30px 0;
@@ -570,42 +571,74 @@ footer .wrapper .content h4 {
   section.slider .wrapper .content .fa-chevron-right:hover {
     cursor: pointer;
   }
-  /* line 529, ../sass/screen.scss */
+  /* line 535, ../sass/screen.scss */
   section.slider .wrapper .content .slide-name div span {
     font: bold 15px/1.5em "Ubuntu Light", sans-serif;
   }
 
-  /* line 540, ../sass/screen.scss */
+  /* line 546, ../sass/screen.scss */
   section.about-us .wrapper {
     width: 80%;
     margin: 0 auto;
   }
 
-  /* line 547, ../sass/screen.scss */
+  /* line 553, ../sass/screen.scss */
   section.portfolio .wrapper {
     width: 80%;
     margin: 0 auto;
   }
-
   /* line 559, ../sass/screen.scss */
+  section.portfolio .wrapper .content span.descr {
+    width: 100%;
+  }
+
+  /* line 573, ../sass/screen.scss */
   section.talk-us .wrapper .content p {
     width: 100%;
   }
 
-  /* line 568, ../sass/screen.scss */
+  /* line 582, ../sass/screen.scss */
   section.contact-us .wrapper {
     margin: 0 auto;
     width: 80%;
   }
-  /* line 573, ../sass/screen.scss */
+  /* line 587, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact {
     float: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
   }
-  /* line 578, ../sass/screen.scss */
+  /* line 593, ../sass/screen.scss */
+  section.contact-us .wrapper .content .contact form {
+    width: 90%;
+  }
+  /* line 596, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact form h3 {
     margin-left: 0;
     font: bold 26px/normal "Liberation Sans", sans-serif;
     margin-top: 50px;
     text-align: center;
+  }
+  /* line 603, ../sass/screen.scss */
+  section.contact-us .wrapper .content .contact form .list-contacts {
+    display: flex;
+    flex-flow: column-reverse wrap;
+    align-items: center;
+    margin-left: 0;
+  }
+  /* line 611, ../sass/screen.scss */
+  section.contact-us .wrapper .content .contact form ul.contact-info {
+    margin-left: 0;
+  }
+  /* line 616, ../sass/screen.scss */
+  section.contact-us .wrapper .content .contact form ul.contact-info li input[type="text"], section.contact-us .wrapper .content .contact form ul.contact-info li input[type="email"], section.contact-us .wrapper .content .contact form ul.contact-info li textarea {
+    width: 100%;
+  }
+  /* line 622, ../sass/screen.scss */
+  section.contact-us .wrapper .content .contact form input[type="submit"] {
+    float: none;
+    margin-left: 0;
+    width: 60%;
   }
 }
