@@ -546,13 +546,66 @@ footer .wrapper .content h4 {
   color: #fff;
 }
 
-@media screen and (max-width: 750px) {
-  /* line 530, ../sass/screen.scss */
+@media handheld and (max-width: 750px) {
+  /* line 524, ../sass/screen.scss */
+  p.descr, span.descr {
+    width: 90%;
+    margin: 0 auto 50px auto;
+  }
+
+  /* line 534, ../sass/screen.scss */
+  header .wrapper .content .menu-list {
+    display: none;
+  }
+
+  /* line 547, ../sass/screen.scss */
+  section.slider .wrapper .content span.fa {
+    font-size: 25px;
+  }
+  /* line 551, ../sass/screen.scss */
+  section.slider .wrapper .content .slide-name {
+    width: 100%;
+  }
+  /* line 554, ../sass/screen.scss */
+  section.slider .wrapper .content .slide-name div span {
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+
+  /* line 569, ../sass/screen.scss */
+  section.description .wrapper .content h2 {
+    font-size: 0.5em;
+  }
+
+  /* line 582, ../sass/screen.scss */
+  section.about-us .wrapper .content ul {
+    border-bottom: 10px solid #f36b47;
+    border-top: 10px solid #f36b47;
+    padding: 50px 0;
+  }
+  /* line 587, ../sass/screen.scss */
+  section.about-us .wrapper .content ul li {
+    margin-bottom: 50px;
+  }
+  /* line 590, ../sass/screen.scss */
+  section.about-us .wrapper .content ul li p {
+    text-align: center;
+  }
+  /* line 594, ../sass/screen.scss */
+  section.about-us .wrapper .content ul li:last-child {
+    margin-bottom: 0;
+  }
+
+  /* line 609, ../sass/screen.scss */
   section.portfolio .wrapper .content span.descr {
     width: 100%;
   }
 
-  /* line 542, ../sass/screen.scss */
+  /* line 621, ../sass/screen.scss */
+  section.talk-us .wrapper .content h2 {
+    font-size: 50px;
+  }
+  /* line 625, ../sass/screen.scss */
   section.talk-us .wrapper .content p {
     width: 100%;
   }
@@ -582,71 +635,71 @@ footer .wrapper .content h4 {
   section.slider .wrapper .content .fa-chevron-right:hover {
     cursor: pointer;
   }
-  /* line 563, ../sass/screen.scss */
+  /* line 646, ../sass/screen.scss */
   section.slider .wrapper .content .slide-name div span {
     font: bold 15px/1.5em "Ubuntu Light", sans-serif;
   }
 
-  /* line 574, ../sass/screen.scss */
+  /* line 657, ../sass/screen.scss */
   section.about-us .wrapper {
     width: 80%;
     margin: 0 auto;
   }
 
-  /* line 581, ../sass/screen.scss */
+  /* line 664, ../sass/screen.scss */
   section.portfolio .wrapper {
     width: 80%;
     margin: 0 auto;
   }
-  /* line 587, ../sass/screen.scss */
+  /* line 670, ../sass/screen.scss */
   section.portfolio .wrapper .content span.descr {
     width: 100%;
   }
 
-  /* line 601, ../sass/screen.scss */
+  /* line 684, ../sass/screen.scss */
   section.talk-us .wrapper .content p {
     width: 100%;
   }
 
-  /* line 610, ../sass/screen.scss */
+  /* line 693, ../sass/screen.scss */
   section.contact-us .wrapper {
     margin: 0 auto;
     width: 80%;
   }
-  /* line 615, ../sass/screen.scss */
+  /* line 698, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact {
     float: none;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
   }
-  /* line 621, ../sass/screen.scss */
+  /* line 704, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact form {
     width: 90%;
   }
-  /* line 624, ../sass/screen.scss */
+  /* line 707, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact form h3 {
     margin-left: 0;
     font: bold 26px/normal "Liberation Sans", sans-serif;
     margin-top: 50px;
     text-align: center;
   }
-  /* line 631, ../sass/screen.scss */
+  /* line 714, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact form .list-contacts {
     display: flex;
     flex-flow: column-reverse wrap;
     align-items: center;
     margin-left: 0;
   }
-  /* line 639, ../sass/screen.scss */
+  /* line 722, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact form ul.contact-info {
     margin-left: 0;
   }
-  /* line 644, ../sass/screen.scss */
+  /* line 727, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact form ul.contact-info li input[type="text"], section.contact-us .wrapper .content .contact form ul.contact-info li input[type="email"], section.contact-us .wrapper .content .contact form ul.contact-info li textarea {
     width: 100%;
   }
-  /* line 650, ../sass/screen.scss */
+  /* line 733, ../sass/screen.scss */
   section.contact-us .wrapper .content .contact form input[type="submit"] {
     float: none;
     margin-left: 0;

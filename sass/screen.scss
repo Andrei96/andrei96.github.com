@@ -519,25 +519,108 @@ footer {
 }
 
 
-@media screen and (max-width: 750px) {
+@media handheld and (max-width: 750px) {
 
-  section.portfolio {
+    p.descr, span.descr {
+      width: 90%;
+      margin: 0 auto 50px auto;
+    }
 
-    .wrapper {
+    header {
+      .wrapper {
 
-      .content {
+        .content {
 
-        span.descr {
-          width: 100%;
+          .menu-list {
+            display: none;
+          }
         }
       }
     }
-  }
 
-  section.talk-us {
+    section.slider {
+
+      .wrapper {
+
+        .content {
+
+          span.fa {
+            font-size: 25px;
+          }
+
+          .slide-name {
+            width: 100%;
+
+            div span {
+              padding: 5px 10px;
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    section.description {
+
+      .wrapper {
+
+        .content {
+
+          h2 {
+            font-size: 0.5em;
+          }
+        }
+      }
+    }
+
+    section.about-us {
+
+      .wrapper {
+
+        .content {
+
+          ul {
+            border-bottom: 10px solid $color;
+            border-top: 10px solid $color;
+            padding: 50px 0;
+
+            li {
+              margin-bottom: 50px;
+
+               p {
+                 text-align: center;
+               }
+
+              &:last-child {
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    section.portfolio {
+
+      .wrapper {
+
+        .content {
+
+          span.descr {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    section.talk-us {
     .wrapper {
 
       .content {
+
+        h2 {
+          font-size: 50px;
+        }
 
         p {
           width: 100%;
