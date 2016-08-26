@@ -1,57 +1,9 @@
-/*noinspection CssUnknownTarget,CssUnknownTarget*/
-@import "compass/reset";
-@import "../mixin/home_active";
-@import "../mixin/pointer_slider";
-@import "../mixin/font_style";
-@import "../mixin/variable";
+div.wrapper {
 
-header {
-
-  .wrapper {
-
-    .content {
-      padding: 35px 0;
-
-      .logo-name {
-        float: left;
-        padding-top: 10px;
-        @include font_style(22, bold,0);
-      }
-
-      .menu-list {
-        text-transform: uppercase;
-        float: right;
-
-        ul {
-
-          li {
-            display: inline;
-            margin-right: 30px;
-            @include check_nav;
-
-            a {
-              position: relative;
-
-              &:hover {
-                border-bottom: 2px solid $color;
-
-                &:after {
-                  position: absolute;
-                  top: 8px;
-                  right: 40%;
-                  font-family: 'FontAwesome';
-                  content: "\f0dd";
-                  color: $color;
-                }
-              }
-            }
-
-            &:last-child {
-              margin-right: 0;
-            }
-          }
-        }
-      }
-    }
+  &:first-child {
+    font-size: 20px;
+  }
+  &:last-child {
+    font-size: 72px;
   }
 }

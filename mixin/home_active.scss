@@ -1,17 +1,22 @@
+@import "../mixin/variable";
 @mixin check_nav {
 
   &:first-child {
 
     a {
-      border-bottom: 2px solid $color;
+      border-bottom: 2px solid $main-color;
 
       &:after {
         position: absolute;
-        top: 8px;
-        right: 40%;
-        font-family: 'FontAwesome';
-        content: "\f0dd";
-        color: $color;
+        top: 100%;
+        left:50%;
+        margin-left: -5px;
+        content:"";
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 9px solid $main-color;
       }
     }
   }

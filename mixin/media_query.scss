@@ -1,0 +1,427 @@
+
+@mixin media_query {
+
+    @media (max-width: #{$mobile-screen}px) {
+
+        p.descr {
+            width: 90%;
+            margin: 0 auto 50px auto;
+        }
+
+        header {
+
+            .logo-name {
+                @include font_style(35,100,0);
+            }
+
+            .gamburger-list {
+                display: block;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                color: #f36b47;
+                font-size: 20px;
+            }
+
+            .menu-list {
+                display: none;
+            }
+        }
+
+        section.slider {
+
+            span.fa {
+                font-size: 30px;
+            }
+
+            ul.slide-name {
+
+                > li {
+
+                    h2 {
+                        padding: 5px 10px;
+                        @include font_style(9);
+                        //font: 9px/1.5em "Ubuntu Light", sans-serif;
+                    }
+                }
+            }
+        }
+
+        section.description {
+
+            h2 {
+                font-size: 0.5em;
+            }
+        }
+
+        section.about-us {
+
+            .wrapper {
+
+                .content {
+
+                    ul.list-services {
+                        text-align: center;
+                        border-top: 0;
+                        border-bottom: 10px solid $main-color;
+                        padding: 50px 0 50px 0;
+
+                        > li {
+                            margin: 0 0 50px 0;
+
+                            p {
+                                text-align: center;
+                            }
+
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+
+                    ul.first-list-item {
+                        padding-bottom: 0;
+                        border-top: 10px solid $main-color;
+                        border-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        section.portfolio {
+
+            .wrapper {
+
+                .content {
+
+                    div.text-descr {
+                        width: 90%;
+                        margin: 0 auto 50px auto;
+
+                        span.descr {
+                            width: 100%;
+                        }
+                    }
+
+                    ul.list-project {
+                        text-align: center;
+
+                        li {
+                            margin-bottom: 50px;
+
+                            .block-info {
+                                background-color: #{$WHITE_SMOKE};
+
+                                a {
+
+                                    .name-project {
+                                        right: 15px;
+                                        width: 80%;
+                                        text-align: center;
+                                        border-bottom: 1px solid #e0d6d6;
+                                    }
+                                }
+
+                                p {
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        section.talk-us {
+
+            h2 {
+                font-size: 40px;
+            }
+
+            p {
+                width: 100%;
+            }
+        }
+
+        section.contact-us {
+
+            .wrapper {
+
+                .content {
+
+                    .address-information {
+
+                        h2 {
+                            margin: 0 0 50px 0;
+                            @include font_style(35, 100);
+                        }
+                    }
+
+                    .block-contact {
+                        .map {
+                            margin-right: 0;
+                            width: 100%;
+                        }
+
+                        .contact {
+                            display: block;
+
+                            h3 {
+                                position: relative;
+                                margin-left: 0;
+                                margin-bottom: 50px;
+                                @include font_style(26, 100);
+                                margin-top: 50px;
+                                text-align: center;
+
+                                &:after {
+                                    content: '';
+                                    position: absolute;
+                                    bottom: -5px;
+                                    left: 50%;
+                                    transform: translate(-50%);
+                                    width: 140px;
+                                    height: 3px;
+                                    background-color: #F16868;
+                                }
+                            }
+
+                            div.wrapper-form {
+                                margin: 0 auto;
+                                width: 80%;
+
+                                &:last-child {
+                                    margin: 0 auto;
+                                    width: 95%;
+
+                                    form.contact-details {
+
+                                        ul.contact-info {
+
+                                            > li {
+
+                                                input[type="text"], input[type="email"], textarea {
+                                                    width: 99%;
+                                                }
+
+                                            }
+                                        }
+
+                                        input[type="submit"] {
+                                            margin: 0 auto;
+                                            width: 60%;
+
+                                        }
+                                    }
+                                }
+                            }
+
+
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: #{$tablet-screen}px) and (max-width: #{$laptop-screen}px){
+
+        section.slider {
+
+            @include set_pointer(40);
+
+            ul.slide-name {
+
+                li {
+
+                    > h2 {
+                        @include font_style(15, bold, 1.5em, 'Ubuntu Light');
+                    }
+                }
+            }
+        }
+
+        section.about-us {
+            .wrapper {
+                width: 80%;
+                margin: 0 auto;
+
+                .content {
+
+                    ul.list-services {
+
+                        > li {
+                            margin-bottom: 50px;
+                        }
+                        &:nth-last-of-type(1) {
+
+                            > li {
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+        section.portfolio {
+            .wrapper {
+                width: 80%;
+                margin: 0 auto;
+
+                .content {
+
+                    div.text-descr {
+
+                        span.descr {
+                            width: 100%;
+                        }
+                    }
+
+                    ul.list-project {
+
+                        > li {
+                            margin-right: 50px;
+                            margin-bottom: 50px;
+
+                            .block-info {
+
+
+                                .name-project {
+                                    margin-right: 20px;
+                                    width: 80%;
+                                    text-align: center;
+                                }
+
+                                p {
+                                    text-align: center;
+                                }
+                            }
+                        }
+
+                        &:nth-last-of-type(1) {
+
+                            > li {
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        section.talk-us {
+
+            p {
+                width: 100%;
+            }
+        }
+
+        section.contact-us {
+
+            .wrapper {
+                margin: 0 auto;
+                width: 80%;
+
+                .content {
+
+                    .block-contact {
+                        margin: 0 auto;
+                        width: 80%;
+
+                        .map {
+                            margin-right: 0;
+                            width: 100%;
+                        }
+
+                        .contact {
+                            width: 100%;
+
+                            h3 {
+                                margin-left: 0;
+                                @include font_style(26, bold);
+                                margin-top: 50px;
+                                text-align: center;
+                            }
+
+                            .wrapper-form {
+                                margin-left: 0;
+
+                                ul.list-contacts {
+                                    display: table;
+                                    margin-bottom: 20px;
+                                    width: 100%;
+                                    text-align: justify;
+
+                                    > li {
+
+                                        &:first-child {
+                                            display: table-footer-group;
+
+                                            div.item {
+
+                                                &:first-child {
+                                                    float: left;
+                                                }
+
+                                                &:last-child {
+                                                    float: right;
+                                                }
+
+                                            }
+                                        }
+
+                                        &:last-child {
+                                            display: table-header-group;
+
+                                            div.item {
+                                                margin: 0 auto;
+                                                width: 240px;
+
+                                                span {
+
+                                                    &:first-child {
+                                                        padding-top: 10px;
+                                                    }
+
+                                                    &:last-child {
+                                                        margin-bottom: 20px;
+                                                    }
+
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                form.contact-details {
+
+                                    ul.contact-info {
+
+                                        li {
+
+                                            input[type="text"], input[type="email"], textarea {
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+
+                                    input[type="submit"] {
+                                        display: inline-block;
+                                        width: 60%;
+                                        text-align: center;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+
+                }
+
+            }
+        }
+    }
+}

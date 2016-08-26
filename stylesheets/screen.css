@@ -65,13 +65,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 16, ../sass/screen.scss */
-section .name-header {
+section .content {
   text-align: center;
 }
 /* line 19, ../sass/screen.scss */
-section .name-header h2 {
+section .content h2 {
   display: inline-block;
-  margin: 50px 0;
+  margin-bottom: 50px;
   font: bold 26px/normal "Liberation Sans", sans-serif;
   color: #484848;
   border-bottom: 2px solid #f36b47;
@@ -92,71 +92,79 @@ section.contact-us .wrapper {
   max-width: 1200px;
 }
 
-/* line 49, ../sass/screen.scss */
-header .wrapper .content {
+/* line 45, ../sass/screen.scss */
+header {
   display: flex;
   justify-content: space-around;
   padding: 35px 0;
 }
-/* line 54, ../sass/screen.scss */
-header .wrapper .content .gamburger-list {
+/* line 50, ../sass/screen.scss */
+header .gamburger-list {
   display: none;
 }
-/* line 58, ../sass/screen.scss */
-header .wrapper .content .logo-name {
+/* line 54, ../sass/screen.scss */
+header .logo-name {
   padding-top: 10px;
   font: bold 22px/0 "Liberation Sans", sans-serif;
 }
-/* line 63, ../sass/screen.scss */
-header .wrapper .content .menu-list {
+/* line 59, ../sass/screen.scss */
+header .menu-list {
   text-transform: uppercase;
 }
-/* line 68, ../sass/screen.scss */
-header .wrapper .content .menu-list ul li {
+/* line 64, ../sass/screen.scss */
+header .menu-list ul.nav-menu > li {
   display: inline;
   margin-right: 30px;
 }
 /* line 6, ../mixin/home_active.scss */
-header .wrapper .content .menu-list ul li:first-child a {
+header .menu-list ul.nav-menu > li:first-child a {
   border-bottom: 2px solid #f36b47;
 }
 /* line 9, ../mixin/home_active.scss */
-header .wrapper .content .menu-list ul li:first-child a:after {
+header .menu-list ul.nav-menu > li:first-child a:after {
   position: absolute;
-  top: 8px;
-  right: 40%;
-  font-family: 'FontAwesome';
-  content: "\f0dd";
-  color: #f36b47;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 9px solid #f36b47;
 }
-/* line 73, ../sass/screen.scss */
-header .wrapper .content .menu-list ul li a {
+/* line 69, ../sass/screen.scss */
+header .menu-list ul.nav-menu > li a {
   position: relative;
 }
-/* line 76, ../sass/screen.scss */
-header .wrapper .content .menu-list ul li a:hover {
+/* line 72, ../sass/screen.scss */
+header .menu-list ul.nav-menu > li a:hover {
   border-bottom: 2px solid #f36b47;
 }
-/* line 79, ../sass/screen.scss */
-header .wrapper .content .menu-list ul li a:hover:after {
+/* line 75, ../sass/screen.scss */
+header .menu-list ul.nav-menu > li a:hover:after {
   position: absolute;
-  top: 8px;
-  right: 40%;
-  font-family: 'FontAwesome';
-  content: "\f0dd";
-  color: #f36b47;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 9px solid #f36b47;
 }
 /* line 90, ../sass/screen.scss */
-header .wrapper .content .menu-list ul li:last-child {
+header .menu-list ul.nav-menu > li:last-child {
   margin-right: 0;
 }
 
-/* line 101, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 section.slider {
   position: relative;
 }
 /* line 5, ../mixin/pointer_slider.scss */
-section.slider .wrapper .content .fa-chevron-left {
+section.slider .fa-chevron-left {
   position: absolute;
   top: 44%;
   left: 6%;
@@ -164,11 +172,11 @@ section.slider .wrapper .content .fa-chevron-left {
   color: #9f503d;
 }
 /* line 12, ../mixin/pointer_slider.scss */
-section.slider .wrapper .content .fa-chevron-left:hover {
+section.slider .fa-chevron-left:hover {
   cursor: pointer;
 }
 /* line 5, ../mixin/pointer_slider.scss */
-section.slider .wrapper .content .fa-chevron-right {
+section.slider .fa-chevron-right {
   position: absolute;
   top: 44%;
   right: 6%;
@@ -176,138 +184,140 @@ section.slider .wrapper .content .fa-chevron-right {
   color: #9f503d;
 }
 /* line 12, ../mixin/pointer_slider.scss */
-section.slider .wrapper .content .fa-chevron-right:hover {
+section.slider .fa-chevron-right:hover {
   cursor: pointer;
 }
-/* line 110, ../sass/screen.scss */
-section.slider .wrapper .content img {
+/* line 104, ../sass/screen.scss */
+section.slider img.slider_photo {
   display: block;
   width: 100%;
 }
-/* line 115, ../sass/screen.scss */
-section.slider .wrapper .content .slide-name {
+/* line 109, ../sass/screen.scss */
+section.slider ul.slide-name {
   position: absolute;
   top: 50%;
   left: 50%;
   text-align: center;
   transform: translate(-50%, -50%);
 }
-/* line 124, ../sass/screen.scss */
-section.slider .wrapper .content .slide-name div span {
+/* line 118, ../sass/screen.scss */
+section.slider ul.slide-name > li h2 {
   padding: 10px 80px;
   background-color: rgba(0, 0, 0, 0.5);
   font: bold 26px/1.5em "Ubuntu Light", sans-serif;
   color: white;
   text-transform: capitalize;
 }
-/* line 132, ../sass/screen.scss */
-section.slider .wrapper .content .slide-name div:first-child {
+/* line 126, ../sass/screen.scss */
+section.slider ul.slide-name > li:first-child {
   margin-bottom: 20px;
 }
 
-/* line 144, ../sass/screen.scss */
-section.description .wrapper {
+/* line 134, ../sass/screen.scss */
+section.description {
+  margin-bottom: 50px;
   background-color: #f36b47;
 }
-/* line 147, ../sass/screen.scss */
-section.description .wrapper .content {
-  padding: 37px 20px;
-}
-/* line 150, ../sass/screen.scss */
-section.description .wrapper .content h2 {
+/* line 138, ../sass/screen.scss */
+section.description h2 {
   font: normal 21px/normal "Liberation Sans", sans-serif;
   color: white;
   text-align: center;
+  line-height: 4.5em;
 }
-/* line 155, ../sass/screen.scss */
-section.description .wrapper .content h2 > span {
+/* line 144, ../sass/screen.scss */
+section.description h2 > span {
   text-transform: uppercase;
   font-weight: bold;
   border-bottom: 0.1px solid white;
 }
 
-/* line 166, ../sass/screen.scss */
+/* line 153, ../sass/screen.scss */
 section.about-us {
-  overflow: hidden;
+  margin-bottom: 50px;
 }
-/* line 172, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 section.about-us .wrapper .content p.descr {
   margin-bottom: 50px;
   font: normal 16px/2em "Liberation Sans", sans-serif;
   color: #a3a2a2;
   text-align: center;
 }
-/* line 179, ../sass/screen.scss */
-section.about-us .wrapper .content ul {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+/* line 167, ../sass/screen.scss */
+section.about-us .wrapper .content ul.list-services {
+  display: inline-block;
+  text-align: justify;
 }
-/* line 184, ../sass/screen.scss */
-section.about-us .wrapper .content ul li {
+/* line 171, ../sass/screen.scss */
+section.about-us .wrapper .content ul.list-services > li {
+  display: inline-block;
+  margin-right: 50px;
   width: 220px;
 }
-/* line 187, ../sass/screen.scss */
-section.about-us .wrapper .content ul li span {
+/* line 176, ../sass/screen.scss */
+section.about-us .wrapper .content ul.list-services > li span.fa {
   display: block;
+  margin-bottom: 10px;
+  font-size: 30px;
+  text-align: center;
+  color: #f36b47;
+}
+/* line 184, ../sass/screen.scss */
+section.about-us .wrapper .content ul.list-services > li h3 {
   font: normal 20px/normal "Liberation Sans", sans-serif;
   text-align: center;
 }
-/* line 192, ../sass/screen.scss */
-section.about-us .wrapper .content ul li span.fa {
-  margin-bottom: 10px;
-  font-family: 'FontAwesome';
-  color: #f36b47;
-  font-size: 30px;
-}
-/* line 200, ../sass/screen.scss */
-section.about-us .wrapper .content ul li p {
+/* line 189, ../sass/screen.scss */
+section.about-us .wrapper .content ul.list-services > li p {
   margin-top: 10px;
   color: #a3a2a2;
   font-size: 13px;
   text-align: left;
   line-height: 1.5em;
 }
-/* line 207, ../sass/screen.scss */
-section.about-us .wrapper .content ul li:last-child {
-  margin-right: 0;
-}
 
-/* line 217, ../sass/screen.scss */
+/* line 203, ../sass/screen.scss */
 section.portfolio {
-  margin-top: 50px;
+  margin-bottom: 50px;
 }
-/* line 224, ../sass/screen.scss */
+/* line 210, ../sass/screen.scss */
 section.portfolio .wrapper .content h2 {
   margin: 0 0 50px 0;
 }
-/* line 228, ../sass/screen.scss */
-section.portfolio .wrapper .content span.descr {
+/* line 214, ../sass/screen.scss */
+section.portfolio .wrapper .content div.text-descr {
+  margin-bottom: 20px;
+  text-align: center;
+}
+/* line 218, ../sass/screen.scss */
+section.portfolio .wrapper .content div.text-descr span.descr {
   display: inline-block;
-  margin-bottom: 21px;
   width: 700px;
   font: normal 16px/normal "Liberation Sans", sans-serif;
   color: #a3a2a2;
 }
-/* line 236, ../sass/screen.scss */
+/* line 226, ../sass/screen.scss */
 section.portfolio .wrapper .content ul.list-project {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+  display: inline-block;
+  text-align: justify;
 }
-/* line 243, ../sass/screen.scss */
-section.portfolio .wrapper .content ul.list-project li img {
+/* line 230, ../sass/screen.scss */
+section.portfolio .wrapper .content ul.list-project > li {
+  display: inline-block;
+  margin-right: 20px;
+}
+/* line 234, ../sass/screen.scss */
+section.portfolio .wrapper .content ul.list-project > li img {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   opacity: 2;
 }
-/* line 249, ../sass/screen.scss */
-section.portfolio .wrapper .content ul.list-project li .block-info {
+/* line 239, ../sass/screen.scss */
+section.portfolio .wrapper .content ul.list-project > li .block-info {
   margin-top: -3px;
   border: 1px solid #d5d3d3;
 }
-/* line 253, ../sass/screen.scss */
-section.portfolio .wrapper .content ul.list-project li .block-info .name-project {
-  position: relative;
+/* line 243, ../sass/screen.scss */
+section.portfolio .wrapper .content ul.list-project > li .block-info .name-project {
   width: 90%;
   padding-right: 15px;
   margin-bottom: 10px;
@@ -318,251 +328,187 @@ section.portfolio .wrapper .content ul.list-project li .block-info .name-project
   color: #f36b47;
   border-bottom: 1px solid #d5d3d3;
 }
-/* line 266, ../sass/screen.scss */
-section.portfolio .wrapper .content ul.list-project li .block-info p {
-  margin-top: 10px;
-  padding-bottom: 8px;
-  padding-right: 10px;
-  font-size: 14px;
-  text-align: right;
-  color: #605f5f;
-}
-/* line 281, ../sass/screen.scss */
-section.portfolio .wrapper .content ul.description-project li {
-  margin-top: -2px;
-  margin-right: 56px;
-  margin-bottom: 50px;
-  padding: 0 7px 3px;
-  background-color: #eee;
-}
-/* line 288, ../sass/screen.scss */
-section.portfolio .wrapper .content ul.description-project li:last-child {
-  margin-right: 0;
-}
-/* line 294, ../sass/screen.scss */
-section.portfolio .wrapper .content ul.description-project li a span.name-project {
-  display: block;
-  position: relative;
-  padding: 10px 10px 5px 0;
-  font: bolder 16px/normal "Liberation Sans", sans-serif;
-  text-align: right;
-  color: #f36b47;
-  border-bottom: 1px solid #d5d3d3;
-}
-/* line 303, ../sass/screen.scss */
-section.portfolio .wrapper .content ul.description-project li a span.name-project:before {
-  position: absolute;
-  bottom: 34px;
-  left: -8px;
-  background-color: #f36b47;
-  opacity: 0.8;
-  height: 105px;
-  width: 250px;
-  font-family: "FontAwesome";
-  content: "\f0c1";
-  font-size: 50px;
-  color: white;
-  text-align: center;
-  padding-top: 60px;
-}
-/* line 321, ../sass/screen.scss */
-section.portfolio .wrapper .content ul.description-project li p {
-  margin-top: 10px;
-  padding-bottom: 5px;
-  padding-right: 10px;
+/* line 255, ../sass/screen.scss */
+section.portfolio .wrapper .content ul.list-project > li .block-info p {
+  padding: 0 10px 8px 0;
   font-size: 14px;
   text-align: right;
   color: #605f5f;
 }
 
-/* line 336, ../sass/screen.scss */
+/* line 270, ../sass/screen.scss */
 section.talk-us {
-  margin-top: 50px;
-}
-/* line 341, ../sass/screen.scss */
-section.talk-us .wrapper .content {
-  padding: 50px;
+  margin-bottom: 70px;
+  padding: 70px 50px 100px 50px;
   background-color: #7a7a7a;
-  clear: both;
   text-align: center;
 }
-/* line 347, ../sass/screen.scss */
-section.talk-us .wrapper .content h2 {
-  margin-top: 20px;
+/* line 276, ../sass/screen.scss */
+section.talk-us h2 {
   margin-bottom: 30px;
   font: normal 72px/normal "Liberation Sans", sans-serif;
   font: 72px 'Liberation Sans', sans-serif;
   text-transform: capitalize;
   color: #fff;
 }
-/* line 356, ../sass/screen.scss */
-section.talk-us .wrapper .content p {
+/* line 284, ../sass/screen.scss */
+section.talk-us p {
   display: inline-block;
-  margin-bottom: 50px;
   font-size: 18px;
   width: 850px;
   color: white;
   line-height: 1.5em;
 }
 
-/* line 369, ../sass/screen.scss */
+/* line 294, ../sass/screen.scss */
 section.contact-us {
-  margin-top: 70px;
-  overflow: hidden;
+  margin-bottom: 200px;
 }
-/* line 375, ../sass/screen.scss */
-section.contact-us .wrapper .content {
-  text-align: center;
-}
-/* line 380, ../sass/screen.scss */
+/* line 303, ../sass/screen.scss */
 section.contact-us .wrapper .content .address-information p.descr {
-  display: inline-block;
   margin-bottom: 50px;
   font: 500 16px/1.5em "Liberation Sans", sans-serif;
   color: #a3a2a2;
 }
-/* line 388, ../sass/screen.scss */
-section.contact-us .wrapper .content .map {
+/* line 312, ../sass/screen.scss */
+section.contact-us .wrapper .content .block-contact .map {
+  margin-right: 30px;
+}
+/* line 316, ../sass/screen.scss */
+section.contact-us .wrapper .content .block-contact .contact {
   display: inline-block;
+  vertical-align: top;
 }
-/* line 392, ../sass/screen.scss */
-section.contact-us .wrapper .content .contact {
-  float: right;
-}
-/* line 395, ../sass/screen.scss */
-section.contact-us .wrapper .content .contact .contacts-responsive {
-  display: none;
-}
-/* line 401, ../sass/screen.scss */
-section.contact-us .wrapper .content .contact form h3 {
-  margin-left: 40px;
+/* line 320, ../sass/screen.scss */
+section.contact-us .wrapper .content .block-contact .contact h3 {
   text-align: left;
   font: bold 20px/normal "Liberation Sans", sans-serif;
   margin-bottom: 15px;
 }
-/* line 408, ../sass/screen.scss */
-section.contact-us .wrapper .content .contact form .list-contacts {
-  margin-left: 90px;
+/* line 326, ../sass/screen.scss */
+section.contact-us .wrapper .content .block-contact .contact .wrapper-form {
+  margin-left: 50px;
+}
+/* line 329, ../sass/screen.scss */
+section.contact-us .wrapper .content .block-contact .contact .wrapper-form ul.list-contacts {
   text-align: left;
 }
-/* line 412, ../sass/screen.scss */
-section.contact-us .wrapper .content .contact form .list-contacts li {
+/* line 334, ../sass/screen.scss */
+section.contact-us .wrapper .content .block-contact .contact .wrapper-form ul.list-contacts > li div.item {
   margin: 0 0 20px 0;
 }
-/* line 415, ../sass/screen.scss */
-section.contact-us .wrapper .content .contact form .list-contacts li span:first-child {
+/* line 337, ../sass/screen.scss */
+section.contact-us .wrapper .content .block-contact .contact .wrapper-form ul.list-contacts > li div.item span:first-child {
   margin-right: 20px;
   color: #f36b47;
 }
-/* line 420, ../sass/screen.scss */
-section.contact-us .wrapper .content .contact form .list-contacts li span:last-child {
+/* line 342, ../sass/screen.scss */
+section.contact-us .wrapper .content .block-contact .contact .wrapper-form ul.list-contacts > li div.item span:last-child {
   color: #a3a2a2;
 }
-/* line 423, ../sass/screen.scss */
-section.contact-us .wrapper .content .contact form .list-contacts li:last-child {
-  overflow: hidden;
+/* line 349, ../sass/screen.scss */
+section.contact-us .wrapper .content .block-contact .contact .wrapper-form ul.list-contacts > li:last-child span:first-child {
+  display: inline-block;
+  vertical-align: super;
 }
-/* line 426, ../sass/screen.scss */
-section.contact-us .wrapper .content .contact form .list-contacts li:last-child span:first-child {
-  float: left;
-  margin-right: 30px;
-}
-/* line 431, ../sass/screen.scss */
-section.contact-us .wrapper .content .contact form .list-contacts li:last-child span:last-child {
-  float: left;
+/* line 354, ../sass/screen.scss */
+section.contact-us .wrapper .content .block-contact .contact .wrapper-form ul.list-contacts > li:last-child span:last-child {
+  display: inline-block;
   width: 200px;
 }
-/* line 439, ../sass/screen.scss */
-section.contact-us .wrapper .content .contact form ul.contact-info {
-  margin-left: 90px;
-}
-/* line 445, ../sass/screen.scss */
-section.contact-us .wrapper .content .contact form ul.contact-info li:first-child, section.contact-us .wrapper .content .contact form ul.contact-info li:nth-child(2), section.contact-us .wrapper .content .contact form ul.contact-info li:last-child {
+/* line 368, ../sass/screen.scss */
+section.contact-us .wrapper .content .block-contact .contact .wrapper-form form.contact-details ul.contact-info > li:first-child, section.contact-us .wrapper .content .block-contact .contact .wrapper-form form.contact-details ul.contact-info > li:nth-child(2) {
   margin-bottom: 6px;
 }
-/* line 449, ../sass/screen.scss */
-section.contact-us .wrapper .content .contact form ul.contact-info li div.list-address {
+/* line 372, ../sass/screen.scss */
+section.contact-us .wrapper .content .block-contact .contact .wrapper-form form.contact-details ul.contact-info > li:last-child {
+  margin-bottom: 10px;
+}
+/* line 376, ../sass/screen.scss */
+section.contact-us .wrapper .content .block-contact .contact .wrapper-form form.contact-details ul.contact-info > li div.list-address {
   text-align: left;
   width: 289px;
 }
-/* line 453, ../sass/screen.scss */
-section.contact-us .wrapper .content .contact form ul.contact-info li div.list-address span {
+/* line 380, ../sass/screen.scss */
+section.contact-us .wrapper .content .block-contact .contact .wrapper-form form.contact-details ul.contact-info > li div.list-address span {
   display: inline;
   color: #9d9c9c;
 }
-/* line 457, ../sass/screen.scss */
-section.contact-us .wrapper .content .contact form ul.contact-info li div.list-address span .fa {
+/* line 384, ../sass/screen.scss */
+section.contact-us .wrapper .content .block-contact .contact .wrapper-form form.contact-details ul.contact-info > li div.list-address span .fa {
   margin-right: 20px;
   font-size: 20px;
   color: #f27554;
 }
-/* line 465, ../sass/screen.scss */
-section.contact-us .wrapper .content .contact form ul.contact-info li input[type="text"], section.contact-us .wrapper .content .contact form ul.contact-info li input[type="email"], section.contact-us .wrapper .content .contact form ul.contact-info li textarea {
-  display: inherit;
-  padding: 15px;
+/* line 392, ../sass/screen.scss */
+section.contact-us .wrapper .content .block-contact .contact .wrapper-form form.contact-details ul.contact-info > li input[type="text"], section.contact-us .wrapper .content .block-contact .contact .wrapper-form form.contact-details ul.contact-info > li input[type="email"], section.contact-us .wrapper .content .block-contact .contact .wrapper-form form.contact-details ul.contact-info > li textarea {
+  display: block;
   width: 300px;
+  padding: 0 0 0 5px;
   border: 1px solid #cac6c6;
   font-size: 14px;
   background-color: #f0f0f0;
+  line-height: 3em;
 }
-/* line 474, ../sass/screen.scss */
-section.contact-us .wrapper .content .contact form ul.contact-info li textarea {
+/* line 401, ../sass/screen.scss */
+section.contact-us .wrapper .content .block-contact .contact .wrapper-form form.contact-details ul.contact-info > li input[type="text"]:focus, section.contact-us .wrapper .content .block-contact .contact .wrapper-form form.contact-details ul.contact-info > li input[type="email"]:focus, section.contact-us .wrapper .content .block-contact .contact .wrapper-form form.contact-details ul.contact-info > li textarea:focus {
+  outline: none;
+}
+/* line 406, ../sass/screen.scss */
+section.contact-us .wrapper .content .block-contact .contact .wrapper-form form.contact-details ul.contact-info > li textarea {
   width: 450px;
   height: 150px;
   resize: none;
 }
-/* line 482, ../sass/screen.scss */
-section.contact-us .wrapper .content .contact form input[type="submit"] {
-  float: left;
-  margin-left: 90px;
-  margin-top: 5px;
+/* line 411, ../sass/screen.scss */
+section.contact-us .wrapper .content .block-contact .contact .wrapper-form form.contact-details ul.contact-info > li textarea:focus {
+  outline: none;
+}
+/* line 418, ../sass/screen.scss */
+section.contact-us .wrapper .content .block-contact .contact .wrapper-form form.contact-details input[type="submit"] {
+  display: block;
   padding: 10px 30px;
   background-color: #f27554;
   border: none;
-  border-radius: 5px;
+  border-radius: 2px;
   font-size: 18px;
   color: white;
 }
-/* line 492, ../sass/screen.scss */
-section.contact-us .wrapper .content .contact form input[type="submit"]:active {
+/* line 427, ../sass/screen.scss */
+section.contact-us .wrapper .content .block-contact .contact .wrapper-form form.contact-details input[type="submit"]:focus {
+  outline: none;
+}
+/* line 431, ../sass/screen.scss */
+section.contact-us .wrapper .content .block-contact .contact .wrapper-form form.contact-details input[type="submit"]:active {
   color: #f36b47;
   background-color: inherit;
 }
 
-/* line 504, ../sass/screen.scss */
+/* line 447, ../sass/screen.scss */
 footer {
-  position: relative;
-  bottom: -200px;
-  margin-top: 70px;
-}
-/* line 511, ../sass/screen.scss */
-footer .wrapper .content {
-  position: relative;
-  bottom: 90px;
-  clear: both;
+  margin-bottom: 200px;
+  text-align: center;
   background-color: #f27554;
 }
-/* line 517, ../sass/screen.scss */
-footer .wrapper .content h4 {
-  position: relative;
-  padding: 30px 0;
-  text-align: center;
+/* line 452, ../sass/screen.scss */
+footer h4 {
+  line-height: 75px;
   color: #fff;
 }
 
 @media (max-width: 765px) {
-  /* line 5, ../mixin/media_query.scss */
+  /* line 6, ../mixin/media_query.scss */
   p.descr {
     width: 90%;
     margin: 0 auto 50px auto;
   }
 
-  /* line 15, ../mixin/media_query.scss */
-  header .wrapper .content .logo-name {
+  /* line 13, ../mixin/media_query.scss */
+  header .logo-name {
     font: 100 35px/0 "Liberation Sans", sans-serif;
   }
-  /* line 18, ../mixin/media_query.scss */
-  header .wrapper .content .gamburger-list {
+  /* line 17, ../mixin/media_query.scss */
+  header .gamburger-list {
     display: block;
     position: absolute;
     top: 10px;
@@ -571,156 +517,150 @@ footer .wrapper .content h4 {
     font-size: 20px;
   }
   /* line 26, ../mixin/media_query.scss */
-  header .wrapper .content .menu-list {
+  header .menu-list {
     display: none;
   }
 
-  /* line 39, ../mixin/media_query.scss */
-  section.slider .wrapper .content span.fa {
-    font-size: 25px;
+  /* line 33, ../mixin/media_query.scss */
+  section.slider span.fa {
+    font-size: 30px;
   }
-  /* line 43, ../mixin/media_query.scss */
-  section.slider .wrapper .content .slide-name {
-    width: 100%;
-  }
-  /* line 46, ../mixin/media_query.scss */
-  section.slider .wrapper .content .slide-name div span {
+  /* line 41, ../mixin/media_query.scss */
+  section.slider ul.slide-name > li h2 {
     padding: 5px 10px;
-    font-size: 10px;
+    font: normal 9px/normal "Liberation Sans", sans-serif;
   }
 
-  /* line 59, ../mixin/media_query.scss */
-  section.description .wrapper .content {
-    padding: 15px 20px;
-  }
-  /* line 62, ../mixin/media_query.scss */
-  section.description .wrapper .content h2 {
+  /* line 52, ../mixin/media_query.scss */
+  section.description h2 {
     font-size: 0.5em;
   }
 
-  /* line 75, ../mixin/media_query.scss */
-  section.about-us .wrapper .content ul {
+  /* line 63, ../mixin/media_query.scss */
+  section.about-us .wrapper .content ul.list-services {
+    text-align: center;
+    border-top: 0;
     border-bottom: 10px solid #f36b47;
-    border-top: 10px solid #f36b47;
-    padding: 50px 0;
+    padding: 50px 0 50px 0;
   }
-  /* line 80, ../mixin/media_query.scss */
-  section.about-us .wrapper .content ul li {
-    margin-bottom: 50px;
+  /* line 69, ../mixin/media_query.scss */
+  section.about-us .wrapper .content ul.list-services > li {
+    margin: 0 0 50px 0;
   }
-  /* line 83, ../mixin/media_query.scss */
-  section.about-us .wrapper .content ul li p {
+  /* line 72, ../mixin/media_query.scss */
+  section.about-us .wrapper .content ul.list-services > li p {
     text-align: center;
   }
-  /* line 87, ../mixin/media_query.scss */
-  section.about-us .wrapper .content ul li:last-child {
+  /* line 76, ../mixin/media_query.scss */
+  section.about-us .wrapper .content ul.list-services > li:last-child {
     margin-bottom: 0;
   }
-
-  /* line 102, ../mixin/media_query.scss */
-  section.portfolio .wrapper .content span.descr {
-    width: 90%;
+  /* line 82, ../mixin/media_query.scss */
+  section.about-us .wrapper .content ul.first-list-item {
+    padding-bottom: 0;
+    border-top: 10px solid #f36b47;
+    border-bottom: 0;
   }
-  /* line 107, ../mixin/media_query.scss */
+
+  /* line 97, ../mixin/media_query.scss */
+  section.portfolio .wrapper .content div.text-descr {
+    width: 90%;
+    margin: 0 auto 50px auto;
+  }
+  /* line 101, ../mixin/media_query.scss */
+  section.portfolio .wrapper .content div.text-descr span.descr {
+    width: 100%;
+  }
+  /* line 106, ../mixin/media_query.scss */
+  section.portfolio .wrapper .content ul.list-project {
+    text-align: center;
+  }
+  /* line 109, ../mixin/media_query.scss */
   section.portfolio .wrapper .content ul.list-project li {
     margin-bottom: 50px;
   }
-  /* line 110, ../mixin/media_query.scss */
+  /* line 112, ../mixin/media_query.scss */
   section.portfolio .wrapper .content ul.list-project li .block-info {
     background-color: #f5f5f5;
   }
-  /* line 115, ../mixin/media_query.scss */
+  /* line 117, ../mixin/media_query.scss */
   section.portfolio .wrapper .content ul.list-project li .block-info a .name-project {
     right: 15px;
     width: 80%;
     text-align: center;
     border-bottom: 1px solid #e0d6d6;
   }
-  /* line 123, ../mixin/media_query.scss */
+  /* line 125, ../mixin/media_query.scss */
   section.portfolio .wrapper .content ul.list-project li .block-info p {
     text-align: center;
   }
 
-  /* line 138, ../mixin/media_query.scss */
-  section.talk-us .wrapper .content h2 {
+  /* line 137, ../mixin/media_query.scss */
+  section.talk-us h2 {
     font-size: 40px;
   }
-  /* line 142, ../mixin/media_query.scss */
-  section.talk-us .wrapper .content p {
+  /* line 141, ../mixin/media_query.scss */
+  section.talk-us p {
     width: 100%;
   }
 
-  /* line 155, ../mixin/media_query.scss */
-  section.contact-us .wrapper .content .map {
-    width: 100%;
-  }
-  /* line 163, ../mixin/media_query.scss */
-  section.contact-us .wrapper .content .address-information .name-header h2 {
+  /* line 154, ../mixin/media_query.scss */
+  section.contact-us .wrapper .content .address-information h2 {
     margin: 0 0 50px 0;
     font: 100 35px/normal "Liberation Sans", sans-serif;
   }
-  /* line 170, ../mixin/media_query.scss */
-  section.contact-us .wrapper .content .contact {
-    float: none;
+  /* line 161, ../mixin/media_query.scss */
+  section.contact-us .wrapper .content .block-contact .map {
+    margin-right: 0;
+    width: 100%;
   }
-  /* line 173, ../mixin/media_query.scss */
-  section.contact-us .wrapper .content .contact form {
-    margin: 0 auto;
-    width: 90%;
+  /* line 166, ../mixin/media_query.scss */
+  section.contact-us .wrapper .content .block-contact .contact {
+    display: block;
   }
-  /* line 177, ../mixin/media_query.scss */
-  section.contact-us .wrapper .content .contact form h3 {
+  /* line 169, ../mixin/media_query.scss */
+  section.contact-us .wrapper .content .block-contact .contact h3 {
     position: relative;
     margin-left: 0;
     margin-bottom: 50px;
-    font: 100 35px/normal "Liberation Sans", sans-serif;
+    font: 100 26px/normal "Liberation Sans", sans-serif;
     margin-top: 50px;
     text-align: center;
   }
-  /* line 186, ../mixin/media_query.scss */
-  section.contact-us .wrapper .content .contact form h3:after {
+  /* line 177, ../mixin/media_query.scss */
+  section.contact-us .wrapper .content .block-contact .contact h3:after {
     content: '';
     position: absolute;
     bottom: -5px;
     left: 50%;
     transform: translate(-50%);
-    width: 170px;
+    width: 140px;
     height: 3px;
     background-color: #F16868;
   }
-  /* line 197, ../mixin/media_query.scss */
-  section.contact-us .wrapper .content .contact form ul.list-contacts {
-    display: flex;
-    margin-left: 0;
-    flex-flow: column wrap;
-    align-items: center;
+  /* line 189, ../mixin/media_query.scss */
+  section.contact-us .wrapper .content .block-contact .contact div.wrapper-form {
+    margin: 0 auto;
+    width: 80%;
   }
-  /* line 205, ../mixin/media_query.scss */
-  section.contact-us .wrapper .content .contact form ul.list-contacts li:last-child span:first-child {
-    margin-right: 20px;
+  /* line 193, ../mixin/media_query.scss */
+  section.contact-us .wrapper .content .block-contact .contact div.wrapper-form:last-child {
+    margin: 0 auto;
+    width: 95%;
   }
-  /* line 209, ../mixin/media_query.scss */
-  section.contact-us .wrapper .content .contact form ul.list-contacts li:last-child span:last-child {
-    width: 136px;
+  /* line 203, ../mixin/media_query.scss */
+  section.contact-us .wrapper .content .block-contact .contact div.wrapper-form:last-child form.contact-details ul.contact-info > li input[type="text"], section.contact-us .wrapper .content .block-contact .contact div.wrapper-form:last-child form.contact-details ul.contact-info > li input[type="email"], section.contact-us .wrapper .content .block-contact .contact div.wrapper-form:last-child form.contact-details ul.contact-info > li textarea {
+    width: 99%;
   }
-  /* line 216, ../mixin/media_query.scss */
-  section.contact-us .wrapper .content .contact form ul.contact-info {
-    margin-left: 0;
-  }
-  /* line 221, ../mixin/media_query.scss */
-  section.contact-us .wrapper .content .contact form ul.contact-info li input[type="text"], section.contact-us .wrapper .content .contact form ul.contact-info li input[type="email"], section.contact-us .wrapper .content .contact form ul.contact-info li textarea {
-    width: 90%;
-  }
-  /* line 227, ../mixin/media_query.scss */
-  section.contact-us .wrapper .content .contact form input[type="submit"] {
-    float: none;
-    margin-left: 0;
+  /* line 210, ../mixin/media_query.scss */
+  section.contact-us .wrapper .content .block-contact .contact div.wrapper-form:last-child form.contact-details input[type="submit"] {
+    margin: 0 auto;
     width: 60%;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1100px) {
   /* line 5, ../mixin/pointer_slider.scss */
-  section.slider .wrapper .content .fa-chevron-left {
+  section.slider .fa-chevron-left {
     position: absolute;
     top: 44%;
     left: 6%;
@@ -728,11 +668,11 @@ footer .wrapper .content h4 {
     color: #9f503d;
   }
   /* line 12, ../mixin/pointer_slider.scss */
-  section.slider .wrapper .content .fa-chevron-left:hover {
+  section.slider .fa-chevron-left:hover {
     cursor: pointer;
   }
   /* line 5, ../mixin/pointer_slider.scss */
-  section.slider .wrapper .content .fa-chevron-right {
+  section.slider .fa-chevron-right {
     position: absolute;
     top: 44%;
     right: 6%;
@@ -740,77 +680,136 @@ footer .wrapper .content h4 {
     color: #9f503d;
   }
   /* line 12, ../mixin/pointer_slider.scss */
-  section.slider .wrapper .content .fa-chevron-right:hover {
+  section.slider .fa-chevron-right:hover {
     cursor: pointer;
   }
-  /* line 253, ../mixin/media_query.scss */
-  section.slider .wrapper .content .slide-name div span {
+  /* line 238, ../mixin/media_query.scss */
+  section.slider ul.slide-name li > h2 {
     font: bold 15px/1.5em "Ubuntu Light", sans-serif;
   }
 
-  /* line 264, ../mixin/media_query.scss */
+  /* line 246, ../mixin/media_query.scss */
   section.about-us .wrapper {
     width: 80%;
     margin: 0 auto;
   }
+  /* line 254, ../mixin/media_query.scss */
+  section.about-us .wrapper .content ul.list-services > li {
+    margin-bottom: 50px;
+  }
+  /* line 259, ../mixin/media_query.scss */
+  section.about-us .wrapper .content ul.list-services:nth-last-of-type(1) > li {
+    margin-bottom: 0;
+  }
 
-  /* line 271, ../mixin/media_query.scss */
+  /* line 270, ../mixin/media_query.scss */
   section.portfolio .wrapper {
     width: 80%;
     margin: 0 auto;
   }
-  /* line 277, ../mixin/media_query.scss */
-  section.portfolio .wrapper .content span.descr {
+  /* line 278, ../mixin/media_query.scss */
+  section.portfolio .wrapper .content div.text-descr span.descr {
+    width: 100%;
+  }
+  /* line 285, ../mixin/media_query.scss */
+  section.portfolio .wrapper .content ul.list-project > li {
+    margin-right: 50px;
+    margin-bottom: 50px;
+  }
+  /* line 292, ../mixin/media_query.scss */
+  section.portfolio .wrapper .content ul.list-project > li .block-info .name-project {
+    margin-right: 20px;
+    width: 80%;
+    text-align: center;
+  }
+  /* line 298, ../mixin/media_query.scss */
+  section.portfolio .wrapper .content ul.list-project > li .block-info p {
+    text-align: center;
+  }
+  /* line 306, ../mixin/media_query.scss */
+  section.portfolio .wrapper .content ul.list-project:nth-last-of-type(1) > li {
+    margin-bottom: 0;
+  }
+
+  /* line 317, ../mixin/media_query.scss */
+  section.talk-us p {
     width: 100%;
   }
 
-  /* line 291, ../mixin/media_query.scss */
-  section.talk-us .wrapper .content p {
-    width: 100%;
-  }
-
-  /* line 300, ../mixin/media_query.scss */
+  /* line 324, ../mixin/media_query.scss */
   section.contact-us .wrapper {
     margin: 0 auto;
     width: 80%;
   }
-  /* line 305, ../mixin/media_query.scss */
-  section.contact-us .wrapper .content .contact {
-    float: none;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+  /* line 330, ../mixin/media_query.scss */
+  section.contact-us .wrapper .content .block-contact {
+    margin: 0 auto;
+    width: 80%;
   }
-  /* line 311, ../mixin/media_query.scss */
-  section.contact-us .wrapper .content .contact form {
-    width: 90%;
+  /* line 334, ../mixin/media_query.scss */
+  section.contact-us .wrapper .content .block-contact .map {
+    margin-right: 0;
+    width: 100%;
   }
-  /* line 314, ../mixin/media_query.scss */
-  section.contact-us .wrapper .content .contact form h3 {
+  /* line 339, ../mixin/media_query.scss */
+  section.contact-us .wrapper .content .block-contact .contact {
+    width: 100%;
+  }
+  /* line 342, ../mixin/media_query.scss */
+  section.contact-us .wrapper .content .block-contact .contact h3 {
     margin-left: 0;
     font: bold 26px/normal "Liberation Sans", sans-serif;
     margin-top: 50px;
     text-align: center;
   }
-  /* line 321, ../mixin/media_query.scss */
-  section.contact-us .wrapper .content .contact form .list-contacts {
-    display: flex;
-    flex-flow: column-reverse wrap;
-    align-items: center;
+  /* line 349, ../mixin/media_query.scss */
+  section.contact-us .wrapper .content .block-contact .contact .wrapper-form {
     margin-left: 0;
   }
-  /* line 329, ../mixin/media_query.scss */
-  section.contact-us .wrapper .content .contact form ul.contact-info {
-    margin-left: 0;
+  /* line 352, ../mixin/media_query.scss */
+  section.contact-us .wrapper .content .block-contact .contact .wrapper-form ul.list-contacts {
+    display: table;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: justify;
   }
-  /* line 334, ../mixin/media_query.scss */
-  section.contact-us .wrapper .content .contact form ul.contact-info li input[type="text"], section.contact-us .wrapper .content .contact form ul.contact-info li input[type="email"], section.contact-us .wrapper .content .contact form ul.contact-info li textarea {
+  /* line 360, ../mixin/media_query.scss */
+  section.contact-us .wrapper .content .block-contact .contact .wrapper-form ul.list-contacts > li:first-child {
+    display: table-footer-group;
+  }
+  /* line 365, ../mixin/media_query.scss */
+  section.contact-us .wrapper .content .block-contact .contact .wrapper-form ul.list-contacts > li:first-child div.item:first-child {
+    float: left;
+  }
+  /* line 369, ../mixin/media_query.scss */
+  section.contact-us .wrapper .content .block-contact .contact .wrapper-form ul.list-contacts > li:first-child div.item:last-child {
+    float: right;
+  }
+  /* line 376, ../mixin/media_query.scss */
+  section.contact-us .wrapper .content .block-contact .contact .wrapper-form ul.list-contacts > li:last-child {
+    display: table-header-group;
+  }
+  /* line 379, ../mixin/media_query.scss */
+  section.contact-us .wrapper .content .block-contact .contact .wrapper-form ul.list-contacts > li:last-child div.item {
+    margin: 0 auto;
+    width: 240px;
+  }
+  /* line 385, ../mixin/media_query.scss */
+  section.contact-us .wrapper .content .block-contact .contact .wrapper-form ul.list-contacts > li:last-child div.item span:first-child {
+    padding-top: 10px;
+  }
+  /* line 389, ../mixin/media_query.scss */
+  section.contact-us .wrapper .content .block-contact .contact .wrapper-form ul.list-contacts > li:last-child div.item span:last-child {
+    margin-bottom: 20px;
+  }
+  /* line 405, ../mixin/media_query.scss */
+  section.contact-us .wrapper .content .block-contact .contact .wrapper-form form.contact-details ul.contact-info li input[type="text"], section.contact-us .wrapper .content .block-contact .contact .wrapper-form form.contact-details ul.contact-info li input[type="email"], section.contact-us .wrapper .content .block-contact .contact .wrapper-form form.contact-details ul.contact-info li textarea {
     width: 100%;
   }
-  /* line 340, ../mixin/media_query.scss */
-  section.contact-us .wrapper .content .contact form input[type="submit"] {
-    float: none;
-    margin-left: 0;
+  /* line 411, ../mixin/media_query.scss */
+  section.contact-us .wrapper .content .block-contact .contact .wrapper-form form.contact-details input[type="submit"] {
+    display: inline-block;
     width: 60%;
+    text-align: center;
   }
 }
