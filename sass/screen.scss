@@ -99,35 +99,76 @@ header {
 section.slider {
     position: relative;
 
-    @include set_pointer();
 
-    img.slider_photo {
-        display: block;
-        width: 100%;
-    }
 
-    ul.slide-name {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        text-align: center;
-        transform: translate(-50%, -50%);
 
-       > li {
+    ul.slides {
 
-            h2 {
-                padding: 10px 80px;
-                background-color: rgba(0, 0, 0, 0.5);
-                @include font_style(26, bold, 1.5em, 'Ubuntu Light');
-                color: white;
-                text-transform: capitalize;
+        > li {
+            position: relative;
+            overflow: hidden;
+            z-index: -100;
+
+            @include set_pointer();
+
+            img.slider-photo {
+                //position: relative;
+                display: block;
+                width: 100%;
+                height: 44em;
+                //z-index: -100;
+                //overflow: hidden;
             }
 
-            &:first-child {
-                margin-bottom: 20px;
+            ul.slide-text {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                text-align: center;
+                transform: translate(-50%, -50%);
+
+                > li {
+
+                    span {
+                        padding: 10px 80px;
+                        background-color: rgba(0, 0, 0, 0.5);
+                        @include font_style(26, bold, 1.5em, 'Ubuntu Light');
+                        color: white;
+                        text-transform: capitalize;
+                    }
+
+                    &:first-child {
+                        margin-bottom: 20px;
+                    }
+                }
             }
         }
     }
+
+
+
+    //ul.slide-name {
+    //    position: absolute;
+    //    top: 50%;
+    //    left: 50%;
+    //    text-align: center;
+    //    transform: translate(-50%, -50%);
+    //
+    //   > li {
+    //
+    //        h2 {
+    //            padding: 10px 80px;
+    //            background-color: rgba(0, 0, 0, 0.5);
+    //            @include font_style(26, bold, 1.5em, 'Ubuntu Light');
+    //            color: white;
+    //            text-transform: capitalize;
+    //        }
+    //
+    //        &:first-child {
+    //            margin-bottom: 20px;
+    //        }
+    //    }
+    //}
 }
 
 //04 Description section
